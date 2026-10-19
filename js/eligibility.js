@@ -220,7 +220,7 @@
         results: lastResults.map((x) => ({ program_id: x.program_id, result: x.result })).concat(lastExtras.map((x) => ({ program_id: x.id, result: "check_with_program" }))),
         rules_version: RULES.schema_version + " (" + RULES.generated_on + ")"
       });
-      document.getElementById("save-msg").textContent = error ? "Sorry, we couldn't save: " + error.message : "Saved. You can view or delete it in My account.";
+      document.getElementById("save-msg").textContent = error ? "Sorry, we couldn't save: " + RTR.friendlyError(error) : "Saved. You can view or delete it in My account.";
       if (error) btn.disabled = false;
     });
   }

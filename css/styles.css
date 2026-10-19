@@ -113,3 +113,21 @@ input:focus,select:focus,textarea:focus{border-color:var(--focus)}
 .more-questions{margin:0 0 1rem}
 .more-questions>summary{cursor:pointer;font-weight:600;padding:.4rem 0}
 .result h4{margin:.8rem 0 .3rem}
+
+/* ---- accounts, offer codes, staff (v1-live) */
+.oauth-row{display:flex;flex-wrap:wrap;gap:.6rem}
+.btn.oauth{display:inline-flex;align-items:center;gap:.55rem;background:#fff;color:#1f2a24;border:2px solid #c9d3cd}
+.btn.oauth:hover{background:#f3f6f4;color:#1f2a24;border-color:#9fb1a6}
+.divider{display:flex;align-items:center;gap:.75rem;margin:1rem 0;color:#5b665f;font-size:.9rem}
+.divider::before,.divider::after{content:"";flex:1;border-top:1px solid #d5ddd8}
+.linklike{background:none;border:0;padding:0;color:var(--green-dark);text-decoration:underline;font:inherit;cursor:pointer}
+.code-list{display:grid;gap:1rem}
+.code-item{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;margin-top:.75rem}
+.qr{background:#fff;border:1px solid #d5ddd8;border-radius:8px;image-rendering:pixelated}
+.offer-code{font:700 1.6rem/1.2 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.12em;margin:.2rem 0}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:.75rem;margin-bottom:1rem}
+.stat{background:var(--green-soft);border-radius:12px;padding:.8rem;display:flex;flex-direction:column}
+.stat-n{font-size:1.8rem;font-weight:800;color:var(--green-dark)}
+.stat-l{font-size:.88rem}
+.stats-table{border-collapse:collapse;width:100%;margin-bottom:1rem}
+.stats-table th,.stats-table td{border-bottom:1px solid #d5ddd8;padding:.35rem .5rem;text-align:left}

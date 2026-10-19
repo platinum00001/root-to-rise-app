@@ -3,15 +3,15 @@
 # set up the free GitHub OAuth helper (sveltia-cms-auth) and then set base_url below.
 backend:
   name: github
-  repo: platinum00001/root-to-rise
+  repo: platinum00001/root-to-rise-app
   branch: main
   # base_url: https://sveltia-cms-auth.YOUR-SUBDOMAIN.workers.dev   # <- uncomment after OAuth setup
   commit_messages:
     update: "Content: update {{collection}} “{{slug}}” via /admin"
 
 media_folder: images/uploads
-public_folder: /images/uploads
-site_url: https://root-to-rise.vercel.app
+public_folder: images/uploads
+site_url: https://platinum00001.github.io/root-to-rise-app/
 
 collections:
   # ------------------------------------------------------------------ RESOURCES
