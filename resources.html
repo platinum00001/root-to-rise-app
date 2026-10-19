@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Find resources — Root to Rise</title>
+<meta name="description" content="Search local recovery resources by zip code, town, and category for Cape Cod MA and Greater Nashua NH.">
+<meta name="theme-color" content="#2f6b4f">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
+<script src="config.js" defer></script>
+<script src="js/common.js" defer></script>
+<script src="js/resources.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="crisis-bar" role="region" aria-label="Crisis resources">
+  <div class="container">
+    <strong>In crisis? Help is available 24/7:</strong>
+    <span>Call or text <a href="tel:988">988</a> (Suicide &amp; Crisis Lifeline)</span>
+    <span>SAMHSA Helpline <a href="tel:18006624357">1-800-662-4357</a></span>
+    <span>Emergency <a href="tel:911">911</a></span>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="23" fill="#e3efe7"/><path d="M8 30a16 16 0 0 1 32 0" fill="#fdf1dc" stroke="#e9a23b" stroke-width="2"/><path d="M24 38V20" stroke="#2f6b4f" stroke-width="3" stroke-linecap="round"/><path d="M24 24c-6 0-9-4-9-9 6 0 9 4 9 9zM24 21c0-5 3-8 9-8 0 5-3 8-9 8z" fill="#2f6b4f"/><path d="M24 38c-3 2-6 3-9 3M24 38c3 2 6 3 9 3M24 38v4" stroke="#1f4d38" stroke-width="2" stroke-linecap="round"/></svg><span>Root to Rise<small>Recovery Cafe &amp; Community</small></span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="eligibility.html">Benefits checker</a></li>
+        <li><a href="resources.html" aria-current="page">Find resources</a></li>
+        <li><a href="offers.html">Partner offers</a></li>
+        <li><a href="account.html">My account</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+  <div class="container">
+
+    <h1>Find resources</h1>
+    <p class="lead">Search by zip code or town, and pick the kind of help you need. Please call ahead—hours and services can change.</p>
+    <form id="res-form" class="card" role="search" onsubmit="return false">
+      <div class="filters">
+        <div class="field"><label for="f-zip">Zip code</label><input id="f-zip" type="text" inputmode="numeric" maxlength="5" autocomplete="postal-code" placeholder="e.g. 02540"></div>
+        <div class="field"><label for="f-town">Town</label><select id="f-town"><option value="">Any town</option></select></div>
+        <div class="field"><label for="f-q">Keyword</label><input id="f-q" type="search" placeholder="e.g. food pantry"></div>
+      </div>
+      <div role="group" aria-label="Categories">
+        <p class="hint" style="margin-bottom:0">Categories (choose any):</p>
+        <div class="chip-row" id="f-cats"></div>
+      </div>
+      <button type="button" class="btn secondary" id="f-clear">Clear filters</button>
+    </form>
+    <p class="hint">Listings come from the Root to Rise Resource Navigator directory plus a few entries checked by our web team, all verified September 26, 2026. Each card links to its sources. If you see a “Call to confirm hours” badge, please call first.</p>
+    <p id="res-count" aria-live="polite" style="margin-top:1rem"></p>
+    <div id="res-list" class="grid grid-2"></div>
+    <p class="notice info">Know a resource we should add, or see something out of date? Email <a href="mailto:roottorisema@gmail.com">roottorisema@gmail.com</a>.</p>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="crisis-box" role="region" aria-label="Crisis resources (footer)">
+      <h2>If you or someone you love is in crisis</h2>
+      <p style="margin:0">Call or text <a href="tel:988"><strong>988</strong></a> — Suicide &amp; Crisis Lifeline (24/7, free, confidential).<br>
+      SAMHSA National Helpline: <a href="tel:18006624357"><strong>1-800-662-4357</strong></a> (24/7 treatment referral, English &amp; Spanish).<br>
+      Life-threatening emergency: call <a href="tel:911"><strong>911</strong></a>.</p>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h2>Root to Rise Recovery Cafe</h2>
+        <p style="margin:0">A program of <span data-text="site.org_name">Inspiration Is Everywhere</span>, a nonprofit.<br>
+        Serving Falmouth &amp; Mashpee, MA and Nashua, NH.<br>
+        Email: <a href="mailto:roottorisema@gmail.com">roottorisema@gmail.com</a><br>
+        Phone: <a href="tel:+16037212088">603-721-2088</a></p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="eligibility.html">Benefits checker</a></li>
+          <li><a href="resources.html">Find resources</a></li>
+          <li><a href="offers.html">Partner offers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Your privacy</h2>
+        <ul>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="unsubscribe.html">Unsubscribe</a></li>
+          <li><a href="account.html">My account</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="fineprint">This site gives general information, not medical, legal, or benefits advice. Eligibility results are estimates—always confirm with the agency. We use no tracking or advertising scripts. Health information is never sold or shared for marketing.</p>
+  </div>
+</footer>
+</body>
+</html>

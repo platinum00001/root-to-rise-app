@@ -1,0 +1,3569 @@
+{
+ "version": "2026-09-26",
+ "last_updated": "2026-09-26",
+ "note": "Verified 2026-09-26. Most entries come from the Root to Rise Resource Navigator dataset (HSDS-style, see docs/DATA-FORMAT.md); a few were verified by the web team. Hours change often — call to confirm.",
+ "regions": [
+  {
+   "id": "cape_cod",
+   "label": "Cape Cod (Falmouth / Mashpee, MA)",
+   "zip_prefixes": [
+    "025",
+    "026"
+   ]
+  },
+  {
+   "id": "nashua",
+   "label": "Greater Nashua, NH",
+   "zip_prefixes": [
+    "030",
+    "031"
+   ]
+  }
+ ],
+ "categories": [
+  {
+   "id": "crisis",
+   "label": "Crisis & urgent help"
+  },
+  {
+   "id": "treatment",
+   "label": "Treatment & detox"
+  },
+  {
+   "id": "peer-support",
+   "label": "Peer support & meetings"
+  },
+  {
+   "id": "harm-reduction",
+   "label": "Harm reduction / Narcan"
+  },
+  {
+   "id": "mental-health",
+   "label": "Mental health"
+  },
+  {
+   "id": "housing",
+   "label": "Housing & shelter"
+  },
+  {
+   "id": "food",
+   "label": "Food"
+  },
+  {
+   "id": "benefits",
+   "label": "Benefits & phones"
+  },
+  {
+   "id": "fuel",
+   "label": "Heat & utility help"
+  },
+  {
+   "id": "health",
+   "label": "Health care"
+  },
+  {
+   "id": "transportation",
+   "label": "Transportation"
+  },
+  {
+   "id": "jobs",
+   "label": "Jobs"
+  },
+  {
+   "id": "legal",
+   "label": "Legal help"
+  },
+  {
+   "id": "info",
+   "label": "211 & information"
+  }
+ ],
+ "towns": [
+  {
+   "name": "East Falmouth",
+   "state": "MA",
+   "region": "cape_cod",
+   "zips": [
+    "02536"
+   ]
+  },
+  {
+   "name": "Falmouth",
+   "state": "MA",
+   "region": "cape_cod",
+   "zips": [
+    "02536",
+    "02540",
+    "02541",
+    "02543",
+    "02556",
+    "02574"
+   ]
+  },
+  {
+   "name": "Hyannis",
+   "state": "MA",
+   "region": "cape_cod",
+   "zips": [
+    "02601"
+   ]
+  },
+  {
+   "name": "Mashpee",
+   "state": "MA",
+   "region": "cape_cod",
+   "zips": [
+    "02649"
+   ]
+  },
+  {
+   "name": "South Dennis",
+   "state": "MA",
+   "region": "cape_cod",
+   "zips": [
+    "02660"
+   ]
+  },
+  {
+   "name": "Milford",
+   "state": "NH",
+   "region": "nashua",
+   "zips": [
+    "03055"
+   ]
+  },
+  {
+   "name": "Nashua",
+   "state": "NH",
+   "region": "nashua",
+   "zips": [
+    "03060",
+    "03061",
+    "03062",
+    "03063",
+    "03064"
+   ]
+  }
+ ],
+ "resources": [
+  {
+   "id": "svc-cc-falmouth-service-center",
+   "name": "Falmouth Service Center",
+   "service": "Food pantry (client-choice) and fuel-assistance application help",
+   "categories": [
+    "food",
+    "fuel",
+    "benefits"
+   ],
+   "description": "Client-choice food distribution serving all of Cape Cod; senior (60+) shopping by appointment; in-person help applying for SSCAC fuel assistance (HEAP). Office visits by appointment Mon–Fri.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "611 Gifford Street",
+   "town": "Falmouth",
+   "state": "MA",
+   "zip": "02540",
+   "phone": "508-548-2794",
+   "phones": [
+    {
+     "number": "508-548-2794",
+     "description": "main"
+    }
+   ],
+   "website": "https://www.falmouthservicecenter.org",
+   "hours": "Food: Tue 10am–12pm, Wed 3:30–5:30pm, Thu 10am–12pm, Fri 10am–12pm; Seniors 60+: Thu 1–2pm by appointment",
+   "call_to_confirm": false,
+   "eligibility": "Open to Cape Cod residents; call for details",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.falmouthservicecenter.org",
+    "https://www.falmouthservicecenter.org/fuel-assistance",
+    "https://www.capecod.gov/departments/cooperative-extension/programs/nutrition-education-food-safety/food-access-resources/food-access-directory/"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-a-place-at-the-table",
+   "name": "St. Barnabas's Episcopal Church – A Place at the Table",
+   "service": "A Place at the Table – free hot lunch",
+   "categories": [
+    "food"
+   ],
+   "description": "Free hot lunches; open to all, no registration.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "91 Main Street (Parish House)",
+   "town": "Falmouth",
+   "state": "MA",
+   "zip": "02540",
+   "phone": "508-548-3863",
+   "phones": [
+    {
+     "number": "508-548-3863",
+     "description": "main"
+    }
+   ],
+   "website": "https://www.stbfalmouth.org",
+   "hours": "Tue & Thu 11am–1pm (call to confirm)",
+   "call_to_confirm": true,
+   "eligibility": "Open to all",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.capecod.gov/departments/cooperative-extension/programs/nutrition-education-food-safety/food-access-resources/food-access-directory/",
+    "https://www.stbfalmouth.org"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-svdp-falmouth",
+   "name": "St. Vincent de Paul Society – St. Joseph Guardian of the Holy Family Parish",
+   "service": "St. Vincent de Paul Food Pantry (at St. Patrick Church)",
+   "categories": [
+    "food"
+   ],
+   "description": "Perishable and non-perishable food; limit 2 visits/month.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "511 Main Street",
+   "town": "Falmouth",
+   "state": "MA",
+   "zip": "02540",
+   "phone": "508-563-7775",
+   "phones": [
+    {
+     "number": "508-563-7775",
+     "description": "main"
+    }
+   ],
+   "hours": "Tue & Fri 10am–12pm and 1–3pm (call to confirm)",
+   "call_to_confirm": true,
+   "eligibility": "Falmouth residents",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.capecod.gov/departments/cooperative-extension/programs/nutrition-education-food-safety/food-access-resources/food-access-directory/"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-christ-the-king-pantry",
+   "name": "Christ the King Parish – St. Vincent de Paul",
+   "service": "Christ the King Food Pantry",
+   "categories": [
+    "food"
+   ],
+   "description": "Client-choice pantry; delivery available to some areas.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "5 Job's Fishing Road",
+   "town": "Mashpee",
+   "state": "MA",
+   "zip": "02649",
+   "phone": "508-477-7700",
+   "phones": [
+    {
+     "number": "508-477-7700",
+     "description": "parish office"
+    }
+   ],
+   "website": "https://www.christthekingparish.com/st-vincent-de-paul",
+   "hours": "Wed 9am–12pm (call to confirm)",
+   "call_to_confirm": true,
+   "eligibility": "Open to all Cape residents",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.capecod.gov/departments/cooperative-extension/programs/nutrition-education-food-safety/food-access-resources/food-access-directory/",
+    "https://www.christthekingparish.com/st-vincent-de-paul"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-mashpee-wampanoag-pantry",
+   "name": "Mashpee Wampanoag Tribe",
+   "service": "MWT Food Pantry",
+   "categories": [
+    "food"
+   ],
+   "description": "Tribal food pantry; orders placed by phone on arrival.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "483 Great Neck Road South",
+   "town": "Mashpee",
+   "state": "MA",
+   "zip": "02649",
+   "phone": "508-477-0208 ext. 189",
+   "phones": [
+    {
+     "number": "508-477-0208 ext. 189",
+     "description": "food pantry"
+    }
+   ],
+   "website": "https://www.mashpeewampanoagtribe-nsn.gov/food-pantry",
+   "hours": "Tue–Thu 12–4pm (call to confirm)",
+   "call_to_confirm": true,
+   "eligibility": "Call to confirm who is eligible",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.mashpeewampanoagtribe-nsn.gov/food-pantry",
+    "https://www.capecod.gov/departments/cooperative-extension/programs/nutrition-education-food-safety/food-access-resources/food-access-directory/"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-salvation-army-hyannis",
+   "name": "The Salvation Army – Hyannis Corps",
+   "service": "Food pantry and soup kitchen",
+   "categories": [
+    "food"
+   ],
+   "description": "Free breakfast and lunch weekdays; pantry by appointment.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "100 North Street",
+   "town": "Hyannis",
+   "state": "MA",
+   "zip": "02601",
+   "phone": "508-775-0364",
+   "phones": [
+    {
+     "number": "508-775-0364",
+     "description": "main"
+    }
+   ],
+   "website": "https://www.SalvationArmyMA.org/Hyannis",
+   "hours": "Meals Mon–Fri: breakfast 8:30–9:30am, lunch 11:30am–12:30pm; pantry by appointment Mon–Thu 10–11:15am (call to confirm)",
+   "call_to_confirm": true,
+   "eligibility": "All are welcome",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.capecod.gov/departments/cooperative-extension/programs/nutrition-education-food-safety/food-access-resources/food-access-directory/"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-faith-family-kitchen",
+   "name": "Cape Cod Council of Churches",
+   "service": "Faith Family Kitchen – free hot evening meals",
+   "categories": [
+    "food"
+   ],
+   "description": "Hot meals for all; dine-in or carry-out; distributed at back door off Bacon Street.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "154 Bearses Way (back of church)",
+   "town": "Hyannis",
+   "state": "MA",
+   "zip": "02601",
+   "phone": "508-775-5073",
+   "phones": [
+    {
+     "number": "508-775-5073",
+     "description": "main"
+    }
+   ],
+   "website": "https://www.capecodcouncilofchurches.org",
+   "hours": "Mon, Wed, Fri 5:30–6:30pm (call to confirm)",
+   "call_to_confirm": true,
+   "eligibility": "Open to all",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.capecod.gov/departments/cooperative-extension/programs/nutrition-education-food-safety/food-access-resources/food-access-directory/",
+    "https://www.capecodcouncilofchurches.org"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-svdp-hyannis",
+   "name": "St. Vincent de Paul – St. Francis Xavier Church",
+   "service": "St. Vincent de Paul Food Pantry (Hyannis)",
+   "categories": [
+    "food"
+   ],
+   "description": "Perishables and non-perishables.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "21 Cross Street",
+   "town": "Hyannis",
+   "state": "MA",
+   "zip": "02601",
+   "phone": "508-775-3073",
+   "phones": [
+    {
+     "number": "508-775-3073",
+     "description": "main"
+    }
+   ],
+   "hours": "Tue & Fri 10am–12pm (call to confirm)",
+   "call_to_confirm": true,
+   "eligibility": "Call to confirm",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.capecod.gov/departments/cooperative-extension/programs/nutrition-education-food-safety/food-access-resources/food-access-directory/"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-first-baptist-hyannis",
+   "name": "First Baptist Church of Hyannis",
+   "service": "First Baptist Church Pantry",
+   "categories": [
+    "food"
+   ],
+   "description": "Fresh produce, perishables and non-perishables.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "486 Main Street",
+   "town": "Hyannis",
+   "state": "MA",
+   "zip": "02601",
+   "phone": "508-775-1846",
+   "phones": [
+    {
+     "number": "508-775-1846",
+     "description": "main"
+    }
+   ],
+   "hours": "Tue 9am–12pm (call to confirm)",
+   "call_to_confirm": true,
+   "eligibility": "Serves Barnstable & West Yarmouth",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.capecod.gov/departments/cooperative-extension/programs/nutrition-education-food-safety/food-access-resources/food-access-directory/"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-family-resource-center",
+   "name": "Cape Cod Family Resource Center (a program of Advocates)",
+   "service": "Family resource center – basic needs pantry, referrals",
+   "categories": [
+    "food",
+    "benefits"
+   ],
+   "description": "Shelf-stable food, hygiene and cleaning products; family support and referrals; walk-ins welcome.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "29 Bassett Lane",
+   "town": "Hyannis",
+   "state": "MA",
+   "zip": "02601",
+   "phone": "508-815-5100",
+   "phones": [
+    {
+     "number": "508-815-5100",
+     "description": "main"
+    }
+   ],
+   "website": "https://capecodfamilyresourcecenter.org/",
+   "hours": "Mon–Tue 8am–6pm, Wed 8am–5pm, Thu 9am–6pm, Fri 9am–4pm",
+   "call_to_confirm": false,
+   "eligibility": "Families; walk-ins welcome",
+   "fees": "Free",
+   "source_urls": [
+    "https://capecodfamilyresourcecenter.org/",
+    "https://www.capecod.gov/departments/cooperative-extension/programs/nutrition-education-food-safety/food-access-resources/food-access-directory/"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-family-table-collaborative",
+   "name": "Family Table Collaborative",
+   "service": "Free drive-through meal distribution",
+   "categories": [
+    "food"
+   ],
+   "description": "Free meals, drive-through at Hyannis Youth & Community Center; text to sign up.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "141 Bassett Lane",
+   "town": "Hyannis",
+   "state": "MA",
+   "zip": "02601",
+   "phone": "508-348-9777",
+   "phones": [
+    {
+     "number": "508-348-9777",
+     "description": "main (text to sign up)"
+    }
+   ],
+   "hours": "1st & 3rd Thu 4:30–5:30pm (call to confirm)",
+   "call_to_confirm": true,
+   "eligibility": "Sign-up required",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.capecod.gov/departments/cooperative-extension/programs/nutrition-education-food-safety/food-access-resources/food-access-directory/"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-elder-services-mow",
+   "name": "Elder Services of Cape Cod and the Islands",
+   "service": "Meals on Wheels & senior dining; SHINE/elder supports",
+   "categories": [
+    "food",
+    "benefits"
+   ],
+   "description": "Home-delivered meals for homebound adults 60+ and senior dining.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "68 Route 134",
+   "town": "South Dennis",
+   "state": "MA",
+   "zip": "02660",
+   "phone": "508-394-4630",
+   "phones": [
+    {
+     "number": "508-394-4630",
+     "description": "main"
+    },
+    {
+     "number": "800-244-4630",
+     "description": "toll-free"
+    }
+   ],
+   "website": "https://www.escci.org",
+   "hours": "Mon–Fri 9am–12pm (meals office; call to confirm)",
+   "call_to_confirm": true,
+   "eligibility": "Adults 60+",
+   "fees": "Suggested donation may apply",
+   "source_urls": [
+    "https://www.escci.org",
+    "https://www.capecod.gov/departments/cooperative-extension/programs/nutrition-education-food-safety/food-access-resources/food-access-directory/"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-food-access-directory",
+   "name": "Barnstable County – Cape Cod Cooperative Extension",
+   "service": "Cape Cod Food Access Directory (all pantries & meal sites)",
+   "categories": [
+    "food",
+    "info"
+   ],
+   "description": "Official county list of food pantries, meal programs and community fridges across Cape Cod & Islands.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "website": "https://www.capecod.gov/departments/cooperative-extension/programs/nutrition-education-food-safety/food-access-resources/food-access-directory/",
+   "hours": "Online",
+   "call_to_confirm": false,
+   "eligibility": "Anyone",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.capecod.gov/departments/cooperative-extension/programs/nutrition-education-food-safety/food-access-resources/food-access-directory/"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-pier-recovery-center",
+   "name": "Gándara Center",
+   "service": "PIER Recovery Center of Cape Cod (peer recovery support center)",
+   "categories": [
+    "peer-support"
+   ],
+   "description": "Free, peer-led recovery support: recovery coaching, relapse-prevention groups, social events, computers for job search, advocacy. Membership free; all pathways.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "209 Main Street (rear entrance)",
+   "town": "Hyannis",
+   "state": "MA",
+   "zip": "02601",
+   "phone": "508-827-6150",
+   "phones": [
+    {
+     "number": "508-827-6150",
+     "description": "main"
+    }
+   ],
+   "website": "https://www.gandaracenter.org",
+   "hours": "Call or check Facebook for schedule",
+   "call_to_confirm": true,
+   "eligibility": "Anyone in or seeking recovery, and families",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.gandaracenter.org/pier-recovery-center-of-cape-cod",
+    "https://www.mass.gov/info-details/peer-recovery-support-centers"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-falmouth-peer-recovery-center",
+   "name": "Gándara Center",
+   "service": "Falmouth Peer Recovery Center",
+   "categories": [
+    "peer-support"
+   ],
+   "description": "State-funded peer recovery support center: peer support, recovery coaching, groups, social activities. Closest recovery center to Falmouth/Mashpee.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "769 East Falmouth Highway",
+   "town": "East Falmouth",
+   "state": "MA",
+   "zip": "02536",
+   "phone": "508-996-8900",
+   "phones": [
+    {
+     "number": "508-996-8900",
+     "description": "main"
+    }
+   ],
+   "website": "https://www.gandaracenter.org",
+   "hours": "Contact center for schedule",
+   "call_to_confirm": true,
+   "eligibility": "Anyone affected by substance use",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.mass.gov/info-details/peer-recovery-support-centers",
+    "https://www.sandwichmass.org/1756/Recovery-Support-Centers"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-hyannis-recovery-connection",
+   "name": "South East Recovery Learning Community (Vinfen)",
+   "service": "Hyannis Recovery Connection Center",
+   "categories": [
+    "peer-support"
+   ],
+   "description": "Free peer support (mental health, substance use, trauma recovery); no referral or insurance needed. Parent Connection group (Wed), young-adult 'Thursday Night In' (5:30–7pm).",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "106 Bassett Lane",
+   "town": "Hyannis",
+   "state": "MA",
+   "zip": "02601",
+   "phone": "508-815-5219",
+   "phones": [
+    {
+     "number": "508-815-5219",
+     "description": "main"
+    }
+   ],
+   "website": "https://www.southeastrlc.org",
+   "hours": "Mon, Tue, Thu, Fri 9am–2pm",
+   "call_to_confirm": false,
+   "eligibility": "Adults; walk in",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.southeastrlc.org/hyannis",
+    "https://www.sandwichmass.org/1756/Recovery-Support-Centers"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-aa-intergroup",
+   "name": "Cape Cod Intergroup of Alcoholics Anonymous",
+   "service": "AA 24-hour hotline & meeting finder",
+   "categories": [
+    "peer-support"
+   ],
+   "description": "24/7 hotline and Cape & Islands AA meeting list.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "745 Falmouth Road",
+   "town": "Hyannis",
+   "state": "MA",
+   "zip": "02601",
+   "phone": "508-775-7060",
+   "phones": [
+    {
+     "number": "508-775-7060",
+     "description": "24-hour hotline"
+    }
+   ],
+   "website": "https://www.capecodaa.net",
+   "hours": "Hotline 24/7",
+   "call_to_confirm": false,
+   "eligibility": "Anyone",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.capecodaa.net",
+    "https://www.capecod.gov/my-choice-matters/find-help/"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-na-nerna",
+   "name": "New England Region of Narcotics Anonymous (NERNA)",
+   "service": "NA meeting finder (Cape Cod & Massachusetts)",
+   "categories": [
+    "peer-support"
+   ],
+   "description": "Regional NA meeting listings.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "website": "https://www.nerna.org",
+   "hours": "Online",
+   "call_to_confirm": false,
+   "eligibility": "Anyone",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.capecod.gov/my-choice-matters/find-help/"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-gosnold",
+   "name": "Gosnold Behavioral Health",
+   "service": "Detox (inpatient withdrawal management), treatment & admissions line",
+   "categories": [
+    "treatment",
+    "peer-support"
+   ],
+   "description": "Inpatient medical detox, clinical stabilization, residential, outpatient, MAT and family programs. Main campus in Falmouth.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "200 Ter Heun Drive",
+   "town": "Falmouth",
+   "state": "MA",
+   "zip": "02540",
+   "phone": "800-444-1554",
+   "phones": [
+    {
+     "number": "800-444-1554",
+     "description": "admissions"
+    }
+   ],
+   "website": "https://www.gosnold.org",
+   "hours": "Admissions line – call",
+   "call_to_confirm": true,
+   "eligibility": "Insurance/MassHealth accepted – call admissions",
+   "fees": "Varies",
+   "source_urls": [
+    "https://www.gosnold.org",
+    "https://www.capecod.gov/my-choice-matters/find-help/"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-ma-substance-use-helpline",
+   "name": "Massachusetts Substance Use Helpline",
+   "service": "Free, confidential treatment & recovery referral line",
+   "categories": [
+    "treatment",
+    "info",
+    "peer-support"
+   ],
+   "description": "Finds licensed/approved substance use treatment and recovery services statewide; interpreters available.",
+   "region": "statewide_ma",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": true,
+   "phone": "800-327-5050",
+   "phones": [
+    {
+     "number": "800-327-5050",
+     "description": "helpline"
+    }
+   ],
+   "website": "https://www.helplinema.org",
+   "hours": "Call for current hours",
+   "call_to_confirm": true,
+   "eligibility": "Anyone in MA",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.capecod.gov/my-choice-matters/find-help/",
+    "https://www.helplinema.org"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-asgcc-harm-reduction",
+   "name": "AIDS Support Group of Cape Cod (ASGCC)",
+   "service": "Harm reduction: syringe services, free Narcan, HIV/HCV testing (incl. Falmouth mobile van)",
+   "categories": [
+    "harm-reduction",
+    "peer-support"
+   ],
+   "description": "Syringe services, free Narcan (naloxone), STI/HIV/HCV screening, safer-use supplies; mobile outreach van serves Falmouth & Upper Cape (call for hours).",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "428 South Street",
+   "town": "Hyannis",
+   "state": "MA",
+   "zip": "02601",
+   "phone": "508-778-1954",
+   "phones": [
+    {
+     "number": "508-778-1954",
+     "description": "Hyannis client services & harm reduction"
+    }
+   ],
+   "website": "https://www.asgcc.org",
+   "hours": "Call for hours (mobile van: call for schedule)",
+   "call_to_confirm": true,
+   "eligibility": "Anyone",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.asgcc.org",
+    "https://www.capecod.gov/my-choice-matters/find-help/"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-health-imperatives-hr",
+   "name": "Health Imperatives",
+   "service": "Harm reduction & substance use disorder medication/support (Hyannis)",
+   "categories": [
+    "harm-reduction",
+    "treatment",
+    "peer-support"
+   ],
+   "description": "Harm reduction services, SUD medication & support, sexual/reproductive health.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "1019 Iyannough Road (Rt 132)",
+   "town": "Hyannis",
+   "state": "MA",
+   "zip": "02601",
+   "phone": "508-771-8010",
+   "phones": [
+    {
+     "number": "508-771-8010",
+     "description": "Hyannis"
+    },
+    {
+     "number": "508-583-3005",
+     "description": "central intake"
+    }
+   ],
+   "website": "https://healthimperatives.org",
+   "hours": "Mon 9–5:30, Tue 9:30–7, Wed–Thu 8–4:30, Fri 8–3:30",
+   "call_to_confirm": false,
+   "eligibility": "Anyone",
+   "fees": "Call",
+   "source_urls": [
+    "https://healthimperatives.org/cape-cod"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-duffy-health-center",
+   "name": "Duffy Health Center",
+   "service": "Health care for people experiencing homelessness; MAT and behavioral health",
+   "categories": [
+    "health",
+    "treatment",
+    "housing",
+    "peer-support"
+   ],
+   "description": "Primary care, behavioral health, medication for addiction treatment, case management; Portuguese spoken.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "94 Main Street",
+   "town": "Hyannis",
+   "state": "MA",
+   "zip": "02601",
+   "phone": "508-771-9599",
+   "phones": [
+    {
+     "number": "508-771-9599",
+     "description": "clinic"
+    }
+   ],
+   "website": "https://www.duffyhealthcenter.org",
+   "hours": "Call",
+   "call_to_confirm": true,
+   "eligibility": "Priority for people homeless/at risk",
+   "fees": "Sliding scale / insurance",
+   "source_urls": [
+    "https://www.duffyhealthcenter.org",
+    "https://www.capecod.gov/my-choice-matters/find-help/"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-chc-cape-cod",
+   "name": "Community Health Center of Cape Cod",
+   "service": "Primary care, behavioral health & MAT (Mashpee & Falmouth sites)",
+   "categories": [
+    "health",
+    "treatment",
+    "benefits",
+    "peer-support"
+   ],
+   "description": "Community health center with sites in Mashpee (107 Commercial St), Falmouth (210 Jones Rd), Bourne, Centerville, Sandwich.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "107 Commercial Street",
+   "town": "Mashpee",
+   "state": "MA",
+   "zip": "02649",
+   "other_locations": [
+    "210 Jones Road, Falmouth, MA"
+   ],
+   "phone": "508-477-7090",
+   "phones": [
+    {
+     "number": "508-477-7090",
+     "description": "main"
+    }
+   ],
+   "website": "https://www.chcofcapecod.org",
+   "hours": "Call",
+   "call_to_confirm": true,
+   "eligibility": "All; insurance or sliding fee",
+   "fees": "Sliding scale",
+   "source_urls": [
+    "https://www.chcofcapecod.org",
+    "https://www.capecod.gov/my-choice-matters/find-help/"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-learn-to-cope",
+   "name": "Learn to Cope",
+   "service": "Family support meetings (loved ones of people with SUD); naloxone training",
+   "categories": [
+    "peer-support",
+    "harm-reduction"
+   ],
+   "description": "Peer support network for families; free naloxone training at meetings.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "phone": "508-738-5148",
+   "phones": [
+    {
+     "number": "508-738-5148",
+     "description": "main"
+    }
+   ],
+   "website": "https://www.learn2cope.org",
+   "hours": "See website for meeting schedule",
+   "call_to_confirm": true,
+   "eligibility": "Families & loved ones",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.capecod.gov/my-choice-matters/find-help/"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-ma-bh-help-line",
+   "name": "Massachusetts Behavioral Health Help Line (MBHP for the Commonwealth)",
+   "service": "24/7 mental health & substance use help line (call or text)",
+   "categories": [
+    "crisis",
+    "mental-health",
+    "treatment",
+    "peer-support"
+   ],
+   "description": "Free, confidential, no insurance needed; 200+ languages; connects to clinical help and mobile crisis.",
+   "region": "statewide_ma",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": true,
+   "phone": "833-773-2445",
+   "phones": [
+    {
+     "number": "833-773-2445",
+     "description": "call or text 24/7"
+    },
+    {
+     "number": "711",
+     "description": "MassRelay"
+    }
+   ],
+   "website": "https://www.masshelpline.com",
+   "hours": "24/7 incl. holidays",
+   "call_to_confirm": false,
+   "eligibility": "Anyone in MA",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.masshelpline.com",
+    "https://www.mass.gov/info-details/behavioral-health-help-line-bhhl-faq"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-bay-cove-cbhc",
+   "name": "Bay Cove Behavioral Health & Wellness Center (Community Behavioral Health Center)",
+   "service": "24/7 youth & adult mobile crisis; urgent behavioral health (open access)",
+   "categories": [
+    "crisis",
+    "mental-health",
+    "treatment",
+    "peer-support"
+   ],
+   "description": "Mobile crisis clinician usually arrives within an hour; open-access walk-in evaluations; can arrange detox/hospital admission.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "110 Main Street",
+   "town": "Hyannis",
+   "state": "MA",
+   "zip": "02601",
+   "phone": "833-229-2683",
+   "phones": [
+    {
+     "number": "833-229-2683",
+     "description": "833-BAY-COVE, 24/7"
+    }
+   ],
+   "website": "https://baycovecapecod.org",
+   "hours": "Mobile crisis 24/7/365; clinic Mon–Fri 8am–8pm, Sat–Sun 9am–5pm",
+   "call_to_confirm": false,
+   "eligibility": "Anyone on Cape Cod",
+   "fees": "Insurance/MassHealth; no one turned away for crisis",
+   "source_urls": [
+    "https://baycovecapecod.org/contact/"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-hac",
+   "name": "Housing Assistance Corporation (Housing Assistance)",
+   "service": "Housing counseling, family shelters, housing search & energy-efficiency programs",
+   "categories": [
+    "housing",
+    "benefits"
+   ],
+   "description": "HUD-approved housing counseling for Cape & Islands; operates family shelters with the state (apply via EOHLC); housing search help; energy-efficiency/heating system programs (HEAP itself is run by SSCAC).",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "255 Independence Drive",
+   "town": "Hyannis",
+   "state": "MA",
+   "zip": "02601",
+   "other_locations": [
+    "1252 MA-28A, Cataumet, MA"
+   ],
+   "phone": "508-771-5400",
+   "phones": [
+    {
+     "number": "508-771-5400",
+     "description": "main"
+    }
+   ],
+   "website": "https://www.haconcapecod.org",
+   "hours": "Call",
+   "call_to_confirm": true,
+   "eligibility": "Cape & Islands residents",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.haconcapecod.org/",
+    "https://haconcapecod.org/program-services/shelters-and-homeless-services/shelters/"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-ma-eohlc-family-shelter",
+   "name": "MA Executive Office of Housing and Livable Communities (EOHLC)",
+   "service": "Emergency Assistance (EA) family shelter application",
+   "categories": [
+    "housing"
+   ],
+   "description": "Families with children or pregnant people apply for state family shelter centrally; in-person help at DTA Hyannis on Tuesdays 9am–3pm.",
+   "region": "statewide_ma",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": true,
+   "phone": "866-584-0653",
+   "phones": [
+    {
+     "number": "866-584-0653",
+     "description": "EOHLC Remote Assistance"
+    }
+   ],
+   "website": "https://applyhousinghelp.mass.gov/",
+   "hours": "Call",
+   "call_to_confirm": true,
+   "eligibility": "Families with children/pregnant; income & other rules",
+   "fees": "Free",
+   "source_urls": [
+    "https://haconcapecod.org/program-services/shelters-and-homeless-services/shelters/"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-st-josephs-house",
+   "name": "Catholic Charities (Diocese of Fall River) – St. Joseph's House",
+   "service": "St. Joseph's House – overnight shelter for individuals + day program",
+   "categories": [
+    "housing"
+   ],
+   "description": "The only overnight shelter for individual adults on Cape Cod (up to 50 guests); day program with case management and a weekly recovery group. Not first-come: call for bed availability/intake. Proposed move to 460 West Main St is in litigation — still at Winter St as of 2026-09-26.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "77 Winter Street",
+   "town": "Hyannis",
+   "state": "MA",
+   "zip": "02601",
+   "phone": "211",
+   "phones": [
+    {
+     "number": "211",
+     "description": "Mass 211 for current intake contact"
+    }
+   ],
+   "website": "https://haconcapecod.org/st-josephs-house-shelter/",
+   "hours": "Overnight; call to confirm intake",
+   "call_to_confirm": true,
+   "eligibility": "Adults experiencing homelessness",
+   "fees": "Free",
+   "source_urls": [
+    "https://haconcapecod.org/st-josephs-house-shelter/"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-champ-homes",
+   "name": "Champ Homes, Inc.",
+   "service": "Transitional housing for adults who are homeless or near homeless",
+   "categories": [
+    "housing"
+   ],
+   "description": "Faith-based transitional housing with life skills, mentoring and vocational support.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "82 School Street",
+   "town": "Hyannis",
+   "state": "MA",
+   "zip": "02601",
+   "phone": "508-771-0885",
+   "phones": [
+    {
+     "number": "508-771-0885",
+     "description": "main"
+    }
+   ],
+   "website": "https://champhomes.org",
+   "hours": "Call",
+   "call_to_confirm": true,
+   "eligibility": "Adults on Cape Cod",
+   "fees": "Call",
+   "source_urls": [
+    "https://champhomes.org"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-ma-raft-211",
+   "name": "Mass 211",
+   "service": "Mass 211 – 24/7 information & referral (incl. RAFT, shelter, housing & fuel questions)",
+   "categories": [
+    "info",
+    "housing"
+   ],
+   "description": "Dial 211, 24/7, interpreters available; basic RAFT program questions and referrals statewide.",
+   "region": "statewide_ma",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": true,
+   "phone": "211",
+   "phones": [
+    {
+     "number": "211",
+     "description": "24/7"
+    },
+    {
+     "number": "877-211-6277",
+     "description": "toll-free"
+    },
+    {
+     "number": "508-370-4890",
+     "description": "TTY"
+    }
+   ],
+   "website": "https://mass211.org",
+   "hours": "24/7",
+   "call_to_confirm": false,
+   "eligibility": "Anyone in MA",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.mass.gov/info-details/residential-assistance-for-families-in-transition-raft-program",
+    "https://mass211.org"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-dta-hyannis",
+   "name": "MA Department of Transitional Assistance (DTA)",
+   "service": "DTA Hyannis office – SNAP, TAFDC, EAEDC applications & EBT cards",
+   "categories": [
+    "benefits"
+   ],
+   "description": "Apply, submit documents, get an EBT card; kiosks, phones and interpreters available. Apply online at DTAConnect.com.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "500 Main Street",
+   "town": "Hyannis",
+   "state": "MA",
+   "zip": "02601",
+   "phone": "508-862-6600",
+   "phones": [
+    {
+     "number": "508-862-6600",
+     "description": "local office"
+    },
+    {
+     "number": "877-382-2363",
+     "description": "DTA Assistance Line"
+    }
+   ],
+   "website": "https://www.mass.gov/orgs/department-of-transitional-assistance",
+   "hours": "Mon–Fri 8am–5pm",
+   "call_to_confirm": false,
+   "eligibility": "MA residents",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.mass.gov/locations/dta-hyannis-transitional-assistance-office"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-cacci",
+   "name": "Community Action Committee of Cape Cod & Islands (CACCI)",
+   "service": "SNAP application assistance, health insurance enrollment help, free tax prep, emergency assistance",
+   "categories": [
+    "benefits"
+   ],
+   "description": "Help applying for SNAP and MassHealth/Health Connector, free income tax preparation, emergency and seasonal assistance.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "372 North Street",
+   "town": "Hyannis",
+   "state": "MA",
+   "zip": "02601",
+   "phone": "508-771-1727",
+   "phones": [
+    {
+     "number": "508-771-1727",
+     "description": "main"
+    }
+   ],
+   "website": "https://www.cacci.cc",
+   "hours": "Mon–Fri from 8am (call to confirm)",
+   "call_to_confirm": true,
+   "eligibility": "Cape & Islands residents",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.cacci.cc"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-ma-project-bread",
+   "name": "Project Bread",
+   "service": "FoodSource Hotline – SNAP help & food resources",
+   "categories": [
+    "benefits",
+    "food",
+    "info"
+   ],
+   "description": "Statewide food help hotline in 180 languages; SNAP screening and application help.",
+   "region": "statewide_ma",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": true,
+   "phone": "1-800-645-8333",
+   "phones": [
+    {
+     "number": "1-800-645-8333",
+     "description": "FoodSource Hotline"
+    }
+   ],
+   "website": "https://www.projectbread.org",
+   "hours": "Mon–Fri 8am–7pm, Sat 10am–2pm",
+   "call_to_confirm": false,
+   "eligibility": "Anyone in MA",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.projectbread.org/get-help"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-ma-masshealth",
+   "name": "MassHealth",
+   "service": "MassHealth / Health Connector application & customer service",
+   "categories": [
+    "benefits"
+   ],
+   "description": "Apply online at mahealthconnector.org or by phone.",
+   "region": "statewide_ma",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": true,
+   "phone": "1-800-841-2900",
+   "phones": [
+    {
+     "number": "1-800-841-2900",
+     "description": "MassHealth Customer Service (TTY 711)"
+    }
+   ],
+   "website": "https://www.mass.gov/orgs/masshealth",
+   "hours": "Mon–Fri 8am–5pm",
+   "call_to_confirm": false,
+   "eligibility": "MA residents",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.mass.gov/how-to/apply-for-masshealth-the-health-safety-net-or-the-childrens-medical-security-plan"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-mashpee-human-services",
+   "name": "Town of Mashpee – Human Services",
+   "service": "Mashpee Human Services – referrals and fuel-assistance intake (under 60)",
+   "categories": [
+    "benefits",
+    "fuel"
+   ],
+   "description": "Town human services; outreach site for fuel assistance applications for households under 60 (by appointment). Seniors 60+: Mashpee Senior Center 508-539-1440.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "16 Great Neck Road North",
+   "town": "Mashpee",
+   "state": "MA",
+   "zip": "02649",
+   "phone": "508-539-1411",
+   "phones": [
+    {
+     "number": "508-539-1411",
+     "description": "Human Services"
+    },
+    {
+     "number": "508-539-1440",
+     "description": "Senior Center (60+)"
+    }
+   ],
+   "website": "https://www.mashpeema.gov",
+   "hours": "Town hall Mon–Fri 8:30am–4:30pm; by appointment",
+   "call_to_confirm": false,
+   "eligibility": "Mashpee residents",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.mashpeema.gov/1289/Fuel-Assistance-2025-2026"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-sscac-heap",
+   "name": "South Shore Community Action Council (SSCAC)",
+   "service": "Home Energy Assistance Program (HEAP / fuel assistance) for Cape Cod & Islands",
+   "categories": [
+    "fuel"
+   ],
+   "description": "Administers MA fuel assistance for the South Shore, Cape Cod & Islands; online pre-application; phone help; Mashpee outreach site at 133 Falmouth Rd (Shellback Place) Bldg 1 Suite E (Mon/Wed/Fri 9–3:30 during 2025–26 season).",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "133 Falmouth Road, Bldg 1, Suite E",
+   "town": "Mashpee",
+   "state": "MA",
+   "zip": "02649",
+   "phone": "877-383-5243",
+   "phones": [
+    {
+     "number": "877-383-5243",
+     "description": "877-FUELAID"
+    },
+    {
+     "number": "508-746-6707",
+     "description": "Home Energy Assistance line"
+    }
+   ],
+   "website": "https://www.sscac.org",
+   "hours": "Season Nov 1 – Apr 30; applications from Oct 1; outreach-site hours call to confirm",
+   "call_to_confirm": true,
+   "eligibility": "Income ≤ 60% state median income",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.sscac.org/fuel-assistance",
+    "https://www.mashpeema.gov/1289/Fuel-Assistance-2025-2026",
+    "https://www.falmouthservicecenter.org/fuel-assistance"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-ma-lifeline",
+   "name": "MA Department of Telecommunications and Cable (DTC)",
+   "service": "Lifeline phone/internet discount – MA consumer help",
+   "categories": [
+    "benefits"
+   ],
+   "description": "Explains MA Lifeline eligibility (SNAP, MassHealth, SSI, public housing, VA pension, or income ≤135% FPG). Apply through USAC (lifelinesupport.org).",
+   "region": "statewide_ma",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": true,
+   "address": "1 Federal Street, Suite 0740",
+   "town": "Boston",
+   "state": "MA",
+   "zip": "02110",
+   "phone": "800-392-6066",
+   "phones": [
+    {
+     "number": "800-392-6066",
+     "description": "DTC consumer hotline"
+    }
+   ],
+   "website": "https://www.mass.gov/info-details/check-your-eligibility-for-the-lifeline-program",
+   "hours": "Mon–Fri 9am–5pm",
+   "call_to_confirm": false,
+   "eligibility": "Low-income MA households",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.mass.gov/info-details/check-your-eligibility-for-the-lifeline-program"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-ccrta",
+   "name": "Cape Cod Regional Transit Authority (CCRTA)",
+   "service": "Fixed-route buses, DART on-demand rides, Boston Hospital transportation",
+   "categories": [
+    "transportation"
+   ],
+   "description": "Cape-wide bus routes (incl. Falmouth/Mashpee/Hyannis), DART curb-to-curb on-demand service, and rides to Boston hospitals. Hyannis Transportation Center has construction as of Sept 2026.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "1 Transportation Avenue (Hyannis Transportation Center)",
+   "town": "Hyannis",
+   "state": "MA",
+   "zip": "02601",
+   "phone": "800-352-7155",
+   "phones": [
+    {
+     "number": "800-352-7155",
+     "description": "toll-free"
+    },
+    {
+     "number": "508-385-1430",
+     "description": "local"
+    },
+    {
+     "number": "508-775-8504",
+     "description": "office"
+    },
+    {
+     "number": "800-439-0183",
+     "description": "TTY"
+    }
+   ],
+   "website": "https://www.capecodrta.org",
+   "hours": "Office 8:30am–4:30pm; bus schedules vary",
+   "call_to_confirm": false,
+   "eligibility": "Public",
+   "fees": "Fares apply; reduced fares available — call",
+   "source_urls": [
+    "https://www.capecodrta.org/"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-cc-wic",
+   "name": "Health Imperatives – Cape Cod WIC",
+   "service": "WIC nutrition program (Hyannis & Mashpee)",
+   "categories": [
+    "food"
+   ],
+   "description": "WIC for pregnant/postpartum people, infants and children under 5. Mashpee office at Deer Crossing, 681 Falmouth Rd, Bldg B21 (508-540-9742; Tue 11–7, Wed 8:30–4:30). Mobile sites in Eastham & Harwich.",
+   "region": "cape_cod",
+   "regions": [
+    "cape_cod"
+   ],
+   "states": [
+    "MA"
+   ],
+   "statewide": false,
+   "address": "700 Attucks Lane, Suite 1A",
+   "town": "Hyannis",
+   "state": "MA",
+   "zip": "02601",
+   "other_locations": [
+    "681 Falmouth Road, Building B21 (upper level), Mashpee, MA"
+   ],
+   "phone": "508-771-7896",
+   "phones": [
+    {
+     "number": "508-771-7896",
+     "description": "Hyannis"
+    },
+    {
+     "number": "508-540-9742",
+     "description": "Mashpee"
+    },
+    {
+     "number": "1-800-942-1007",
+     "description": "MA WIC statewide"
+    }
+   ],
+   "website": "https://healthimperatives.org",
+   "hours": "Hyannis: Mon 8:30–4:30, Tue 11–7, Wed–Thu 8:30–4:30, Fri 8:30–2, one Sat/month 9–1",
+   "call_to_confirm": false,
+   "eligibility": "Income ≤185% FPL or on SNAP/MassHealth/TAFDC",
+   "fees": "Free",
+   "source_urls": [
+    "https://healthimperatives.org/cape-cod"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-nashua-soup-kitchen",
+   "name": "Nashua Soup Kitchen & Shelter",
+   "service": "Community meals, food pantry, emergency shelter & case management",
+   "categories": [
+    "food",
+    "housing"
+   ],
+   "description": "Breakfast and dinner; food boxes and fresh produce; emergency shelter for individuals and families; help with IDs and employment costs. No ID required for meals.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "2 Quincy Street",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03060",
+   "phone": "603-889-7770",
+   "phones": [
+    {
+     "number": "603-889-7770",
+     "description": "main"
+    }
+   ],
+   "website": "https://www.nsks.org",
+   "hours": "Breakfast Mon–Fri 7:30–8:30am; dinner Mon–Fri 4–6pm; Sat–Sun 12–2pm. Food boxes Mon, Wed–Fri 11am–2:45pm; Tue 5:30–7pm (call to confirm)",
+   "call_to_confirm": true,
+   "eligibility": "Anyone in need in Greater Nashua",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.nsks.org",
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-snh-rescue-mission",
+   "name": "Southern New Hampshire Rescue Mission",
+   "service": "Emergency shelter (men: Mercy House; women: Hope Center), daily community meals, food pantry",
+   "categories": [
+    "housing",
+    "food"
+   ],
+   "description": "Men's shelter at 40 Chestnut St; women's shelter (Hope Center) at 36 Tolles St (603-521-7127); daily community meals; food pantry & clothing every other Tuesday by appointment. Faith-based longer-term programs.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "40 Chestnut Street",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03060",
+   "other_locations": [
+    "36 Tolles Street, Nashua, NH"
+   ],
+   "phone": "603-889-3421",
+   "phones": [
+    {
+     "number": "603-889-3421",
+     "description": "main / Mercy House"
+    },
+    {
+     "number": "603-521-7127",
+     "description": "Hope Center (women)"
+    }
+   ],
+   "website": "https://www.hope4nashua.org",
+   "hours": "Breakfast Mon–Fri 7am, Sat–Sun 8am; lunch Mon, Wed–Fri 12pm; dinner Sat–Sun 5pm (call to confirm)",
+   "call_to_confirm": true,
+   "eligibility": "Adults",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.hope4nashua.org",
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-corpus-christi-pantry",
+   "name": "Corpus Christi Food Pantry & Assistance",
+   "service": "Food pantry; help with rent, evictions, utility shut-offs, bus passes/gas vouchers",
+   "categories": [
+    "food",
+    "housing",
+    "transportation"
+   ],
+   "description": "Pantry by appointment; assistance program helps with rent, evictions, utilities, and transportation (603-598-1641).",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "3 Crown Street",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03060",
+   "phone": "603-882-6372",
+   "phones": [
+    {
+     "number": "603-882-6372",
+     "description": "pantry (appointments)"
+    },
+    {
+     "number": "603-598-1641",
+     "description": "assistance"
+    }
+   ],
+   "website": "https://www.corpuschristifoodpantry.org",
+   "hours": "Mon & Wed mornings, Tue & Thu afternoons – by appointment",
+   "call_to_confirm": true,
+   "eligibility": "Call",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit",
+    "https://www.corpuschristifoodpantry.org/"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-tolles-street-mission",
+   "name": "Tolles Street Mission",
+   "service": "Food pantry",
+   "categories": [
+    "food"
+   ],
+   "description": "Food pantry four days a week.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "52 Whitney Street (corner of Tolles St)",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03064",
+   "phone": "603-880-4984",
+   "phones": [
+    {
+     "number": "603-880-4984",
+     "description": "main"
+    }
+   ],
+   "hours": "Mon & Thu 12–2pm; Tue & Wed 10:30am–12:30pm (call to confirm)",
+   "call_to_confirm": true,
+   "eligibility": "Call",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-salvation-army",
+   "name": "The Salvation Army – Nashua",
+   "service": "Monthly food pantry; back-rent & utility assistance (by appointment)",
+   "categories": [
+    "food",
+    "housing"
+   ],
+   "description": "Pantry available monthly (bring proof of residence); financial help with back rent and utilities by appointment as funds allow.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "1 Montgomery Avenue",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03060",
+   "phone": "603-889-5151",
+   "phones": [
+    {
+     "number": "603-889-5151",
+     "description": "main"
+    },
+    {
+     "number": "603-883-7841",
+     "description": "alt"
+    }
+   ],
+   "hours": "Pantry Mon–Fri 9am–12pm (call to confirm)",
+   "call_to_confirm": true,
+   "eligibility": "Proof of residence",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-grace-lutheran",
+   "name": "Grace Lutheran Church",
+   "service": "Evening food pantry",
+   "categories": [
+    "food"
+   ],
+   "description": "Monthly evening pantry.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "130 Spit Brook Road",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03062",
+   "phone": "603-888-7579",
+   "phones": [
+    {
+     "number": "603-888-7579",
+     "description": "main"
+    }
+   ],
+   "hours": "2nd Thursday 6–8pm (call to confirm)",
+   "call_to_confirm": true,
+   "eligibility": "Call",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-united-way",
+   "name": "United Way of Greater Nashua",
+   "service": "Pop-up food pantries, homebound pantry delivery, free VITA tax prep",
+   "categories": [
+    "food",
+    "benefits"
+   ],
+   "description": "Daily pop-up pantries with Regenerative Roots Association, volunteer delivery for homebound pantry clients, free tax preparation (VITA), Rosie's Pantry hygiene items.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "20 Broad Street",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03064",
+   "phone": "603-882-4011",
+   "phones": [
+    {
+     "number": "603-882-4011",
+     "description": "main"
+    }
+   ],
+   "website": "https://www.unitedwaynashua.org",
+   "hours": "Call for pop-up schedule",
+   "call_to_confirm": true,
+   "eligibility": "Varies",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit",
+    "https://www.unitedwaynashua.org"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-ymca-pantry",
+   "name": "YMCA of Greater Nashua",
+   "service": "Community food pantry; warming/cooling station; Y Cares financial aid",
+   "categories": [
+    "food"
+   ],
+   "description": "Food pantry at each YMCA location, open to the community; serves as Nashua's warming & cooling station.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "24 Stadium Drive",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03062",
+   "phone": "603-882-2011",
+   "phones": [
+    {
+     "number": "603-882-2011",
+     "description": "main"
+    }
+   ],
+   "website": "https://nmymca.org",
+   "hours": "Call",
+   "call_to_confirm": true,
+   "eligibility": "Open to community",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-caphr-nashua",
+   "name": "Community Action Partnership of Hillsborough & Rockingham Counties (CAPHR; Southern New Hampshire Services, Inc.)",
+   "service": "Fuel & Electric Assistance, WIC, senior commodity foods (CSFP), weatherization – Nashua office",
+   "categories": [
+    "fuel",
+    "food",
+    "benefits"
+   ],
+   "description": "NH Fuel Assistance (grants $188–$2,500; deadline Apr 30, 2027), Electric Assistance, WIC, Commodity Supplemental Food for 60+, summer meals, weatherization.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "134 Allds Street",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03060",
+   "phone": "603-889-3440",
+   "phones": [
+    {
+     "number": "603-889-3440",
+     "description": "Nashua office"
+    },
+    {
+     "number": "877-211-0723",
+     "description": "toll-free"
+    },
+    {
+     "number": "800-256-9880",
+     "description": "WIC"
+    }
+   ],
+   "website": "https://www.caphr.org",
+   "hours": "Mon–Fri 8:30am–4:30pm (year-round)",
+   "call_to_confirm": false,
+   "eligibility": "Income ≤60% NH SMI (fuel); WIC ≤185% FPL",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.caphr.org/services/fuel-assistance",
+    "https://www.caphr.org/services/women-infants-children-wic"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-nh-food-bank-snap",
+   "name": "New Hampshire Food Bank",
+   "service": "SNAP application assistance line",
+   "categories": [
+    "benefits"
+   ],
+   "description": "Help completing a SNAP application on NH EASY by phone.",
+   "region": "statewide_nh",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": true,
+   "phone": "1-877-347-7627",
+   "phones": [
+    {
+     "number": "1-877-347-7627",
+     "description": "1-877-347-SNAP"
+    }
+   ],
+   "website": "https://www.nhfoodbank.org",
+   "hours": "Call",
+   "call_to_confirm": true,
+   "eligibility": "NH residents",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.nhfoodbank.org/snap"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-revive-recovery",
+   "name": "Revive Recovery Resource Center",
+   "service": "Peer recovery support center (recovery coaching, telephone recovery support, harm reduction)",
+   "categories": [
+    "peer-support",
+    "harm-reduction"
+   ],
+   "description": "All pathways (12-Step, SMART, Recovery Dharma, etc.); peer recovery support, telephone recovery support, family groups, yoga/meditation, harm reduction program, CRSW training.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "263 Main Street",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03060",
+   "phone": "888-317-8312",
+   "phones": [
+    {
+     "number": "888-317-8312",
+     "description": "main"
+    },
+    {
+     "number": "978-743-9636",
+     "description": "harm reduction services"
+    }
+   ],
+   "website": "https://reviverecovery.org",
+   "hours": "Call",
+   "call_to_confirm": true,
+   "eligibility": "Anyone",
+   "fees": "Free",
+   "source_urls": [
+    "https://reviverecovery.org",
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-doorway",
+   "name": "The Doorway of Greater Nashua (Southern New Hampshire Health)",
+   "service": "Substance use screening, crisis stabilization, referral to treatment, free Narcan",
+   "categories": [
+    "treatment",
+    "harm-reduction",
+    "peer-support"
+   ],
+   "description": "Hub for SUD help: phone & in-person screening, evaluation, care planning, referral, recovery monitoring, naloxone distribution, transportation help, support for loved ones.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "268 Main Street",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03064",
+   "phone": "211",
+   "phones": [
+    {
+     "number": "211",
+     "description": "24/7 via NH 211"
+    },
+    {
+     "number": "603-402-2056",
+     "description": "direct (per CoC toolkit)"
+    }
+   ],
+   "website": "https://www.thedoorway.nh.gov/doorway-greater-nashua",
+   "hours": "In person Mon–Fri 8am–5pm; 24/7 by phone via 211",
+   "call_to_confirm": false,
+   "eligibility": "Anyone",
+   "fees": "Insurance accepted; financial assistance available",
+   "source_urls": [
+    "https://www.thedoorway.nh.gov/doorway-greater-nashua",
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-harbor-care",
+   "name": "Harbor Care",
+   "service": "Health & Wellness Center (primary care, SUD treatment, psychiatry), recovery housing, homeless services",
+   "categories": [
+    "health",
+    "treatment",
+    "housing",
+    "peer-support"
+   ],
+   "description": "Sliding-fee health center (English/Spanish/Portuguese) incl. substance use treatment; Cynthia Day Family Center for women (615 Amherst St); MAT-friendly men's recovery residences; Safe Haven & veterans programs.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "45 High Street",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03060",
+   "other_locations": [
+    "77 Northeastern Blvd, Nashua, NH",
+    "615 Amherst Street, Nashua, NH"
+   ],
+   "phone": "603-821-7788",
+   "phones": [
+    {
+     "number": "603-821-7788",
+     "description": "health center / main"
+    },
+    {
+     "number": "603-882-3616",
+     "description": "housing & supportive services"
+    }
+   ],
+   "website": "https://harborcarenh.org",
+   "hours": "Call",
+   "call_to_confirm": true,
+   "eligibility": "All ages; no one turned away for inability to pay",
+   "fees": "Sliding scale",
+   "source_urls": [
+    "https://harborcarenh.org",
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-gnmh",
+   "name": "Greater Nashua Mental Health",
+   "service": "Mental health & substance use services; walk-in options",
+   "categories": [
+    "treatment",
+    "crisis",
+    "mental-health",
+    "peer-support"
+   ],
+   "description": "Behavioral health for all ages incl. SUD services (12+), crisis stabilization, homeless outreach; no one turned away for lack of insurance.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "100 West Pearl Street",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03060",
+   "phone": "603-889-6147",
+   "phones": [
+    {
+     "number": "603-889-6147",
+     "description": "help center"
+    },
+    {
+     "number": "844-245-4458",
+     "description": "interpreter line"
+    }
+   ],
+   "website": "https://www.gnmhc.org",
+   "hours": "Call / see walk-in options on website",
+   "call_to_confirm": true,
+   "eligibility": "All ages",
+   "fees": "Sliding / insurance",
+   "source_urls": [
+    "https://www.gnmhc.org",
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-lamprey",
+   "name": "Lamprey Health Care – Nashua Center",
+   "service": "Primary care incl. medications for addiction treatment",
+   "categories": [
+    "health",
+    "treatment",
+    "peer-support"
+   ],
+   "description": "Primary care regardless of insurance; MAT, behavioral health, pharmacy assistance; also at Nashua Soup Kitchen Tue–Fri 7:30–9:30am.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "22 Prospect Street",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03060",
+   "phone": "603-883-1626",
+   "phones": [
+    {
+     "number": "603-883-1626",
+     "description": "main"
+    }
+   ],
+   "hours": "Call",
+   "call_to_confirm": true,
+   "eligibility": "All",
+   "fees": "Sliding scale",
+   "source_urls": [
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-arcnh",
+   "name": "Addiction Recovery Coalition of New Hampshire (ARCNH)",
+   "service": "Community recovery center (Milford, Greater Nashua area)",
+   "categories": [
+    "peer-support"
+   ],
+   "description": "Free peer-led recovery coaching, family and veteran programming, AA/SMART/All Recovery meetings; all pathways.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "180 Elm Street, Suite E",
+   "town": "Milford",
+   "state": "NH",
+   "zip": "03055",
+   "phone": "603-554-8142",
+   "phones": [
+    {
+     "number": "603-554-8142",
+     "description": "main"
+    }
+   ],
+   "website": "https://www.arcnh.org",
+   "hours": "Call",
+   "call_to_confirm": true,
+   "eligibility": "Anyone",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-hearts",
+   "name": "H.E.A.R.T.S. Peer Support Center of Greater Nashua",
+   "service": "Mental health peer support center, peer crisis respite & evening warm line",
+   "categories": [
+    "peer-support",
+    "crisis",
+    "mental-health"
+   ],
+   "description": "Adult peer wellness center; 2-bed peer crisis respite (1–7 days); Peer Support Warm Line 1-888-306-4334, 7 days 5–10pm.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "5 Pine Street Ext., Unit 1G",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03060",
+   "phone": "603-882-8400",
+   "phones": [
+    {
+     "number": "603-882-8400",
+     "description": "center"
+    },
+    {
+     "number": "1-888-306-4334",
+     "description": "warm line 5–10pm"
+    },
+    {
+     "number": "603-864-8769",
+     "description": "respite"
+    }
+   ],
+   "website": "https://www.heartspsa.org",
+   "hours": "Mon–Thu 8am–5pm, Fri 8am–4pm (call to confirm)",
+   "call_to_confirm": true,
+   "eligibility": "Adults 18+ who have used/may need public mental health services",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-nh-aa-area43",
+   "name": "Alcoholics Anonymous – New Hampshire (Area 43)",
+   "service": "AA 24-hour helpline & meeting finder",
+   "categories": [
+    "peer-support"
+   ],
+   "description": "Answering service connects callers with sober AA members; statewide meeting list incl. Nashua (District 13).",
+   "region": "statewide_nh",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": true,
+   "phone": "800-593-3330",
+   "phones": [
+    {
+     "number": "800-593-3330",
+     "description": "24-hour helpline"
+    }
+   ],
+   "website": "https://nhaa.net",
+   "hours": "24/7",
+   "call_to_confirm": false,
+   "eligibility": "Anyone",
+   "fees": "Free",
+   "source_urls": [
+    "https://nhaa.net/contact-us/"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-nh-na-gsana",
+   "name": "Granite State Area of Narcotics Anonymous",
+   "service": "NA 24-hour helpline & meeting list",
+   "categories": [
+    "peer-support"
+   ],
+   "description": "Leave a message (option 3) for a callback; callbacks protect anonymity.",
+   "region": "statewide_nh",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": true,
+   "phone": "1-888-624-3578",
+   "phones": [
+    {
+     "number": "1-888-624-3578",
+     "description": "1-888-NA-HELP-U, 24 hours"
+    }
+   ],
+   "website": "https://gsana.org",
+   "hours": "24/7 (callback)",
+   "call_to_confirm": false,
+   "eligibility": "Anyone",
+   "fees": "Free",
+   "source_urls": [
+    "https://gsana.org/contact-us/"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-nh-rapid-response",
+   "name": "NH Rapid Response Access Point (Protocall for NH DHHS)",
+   "service": "24/7 mental health & substance use crisis line; mobile crisis dispatch",
+   "categories": [
+    "crisis",
+    "mental-health"
+   ],
+   "description": "Call for NH-based crisis support; can dispatch mobile crisis teams and arrange same-day help. Text/chat was temporarily unavailable on 2026-09-26 — call instead.",
+   "region": "statewide_nh",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": true,
+   "phone": "833-710-6477",
+   "phones": [
+    {
+     "number": "833-710-6477",
+     "description": "24/7 call"
+    }
+   ],
+   "website": "https://nh988.com",
+   "hours": "24/7",
+   "call_to_confirm": false,
+   "eligibility": "Anyone in NH",
+   "fees": "Free",
+   "source_urls": [
+    "https://nh988.com/",
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-bridges",
+   "name": "Bridges: Domestic & Sexual Violence Support",
+   "service": "24-hour domestic & sexual violence support line, emergency shelter, advocacy",
+   "categories": [
+    "crisis",
+    "housing"
+   ],
+   "description": "Crisis intervention, emergency shelter, court advocacy, support groups for anyone of any gender.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "phone": "603-883-3044",
+   "phones": [
+    {
+     "number": "603-883-3044",
+     "description": "24-hour support line"
+    },
+    {
+     "number": "603-889-0858",
+     "description": "Nashua office"
+    }
+   ],
+   "hours": "Support line 24/7",
+   "call_to_confirm": false,
+   "eligibility": "Anyone",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-coordinated-entry",
+   "name": "Greater Nashua Continuum of Care",
+   "service": "Coordinated Entry – homeless intake, assessment & referral",
+   "categories": [
+    "housing",
+    "info"
+   ],
+   "description": "Anyone experiencing homelessness in Greater Nashua calls here for assessment and referral; after hours or outside region call 211.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "phone": "1-844-800-9911",
+   "phones": [
+    {
+     "number": "1-844-800-9911",
+     "description": "coordinated entry"
+    }
+   ],
+   "website": "http://nashua-coc.org",
+   "hours": "Business hours; 211 after hours",
+   "call_to_confirm": true,
+   "eligibility": "People experiencing homelessness",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-nh-211",
+   "name": "211 New Hampshire (Granite United Way)",
+   "service": "24/7 information & referral; statewide homeless coordinated entry after hours; Doorway access",
+   "categories": [
+    "info",
+    "housing"
+   ],
+   "description": "Dial 211 for housing, shelter, food, utilities and Doorway (SUD) connections.",
+   "region": "statewide_nh",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": true,
+   "phone": "211",
+   "phones": [
+    {
+     "number": "211",
+     "description": "24/7"
+    },
+    {
+     "number": "1-866-444-4211",
+     "description": "toll-free"
+    }
+   ],
+   "website": "https://www.211nh.org",
+   "hours": "24/7",
+   "call_to_confirm": false,
+   "eligibility": "Anyone",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.211nh.org",
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-front-door",
+   "name": "Front Door Agency, Inc.",
+   "service": "Housing stability assistance (back rent, utility arrears, deposits) & transformational housing",
+   "categories": [
+    "housing"
+   ],
+   "description": "One-time/short-term help with housing costs; transitional housing for single mothers & children; youth (18–24) homelessness program.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "7 Concord Street",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03064",
+   "phone": "603-886-2866",
+   "phones": [
+    {
+     "number": "603-886-2866",
+     "description": "main"
+    }
+   ],
+   "website": "https://www.frontdooragency.org",
+   "hours": "Mon–Thu 8:30am–4:30pm (by appointment)",
+   "call_to_confirm": false,
+   "eligibility": "Greater Nashua",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.frontdooragency.org/",
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-family-promise",
+   "name": "Family Promise of Southern New Hampshire",
+   "service": "Family shelter/transitional housing, eviction prevention & shelter diversion",
+   "categories": [
+    "housing"
+   ],
+   "description": "Serves families of all compositions; eviction-prevention financial help (appointment required).",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "3 Crown Street",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03060",
+   "phone": "603-883-7338",
+   "phones": [
+    {
+     "number": "603-883-7338",
+     "description": "main"
+    }
+   ],
+   "website": "https://www.familypromisesnh.org",
+   "hours": "By appointment",
+   "call_to_confirm": true,
+   "eligibility": "Families with children",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.familypromisesnh.org/",
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-nashua-welfare",
+   "name": "City of Nashua – Division of Public Health & Community Services, Welfare Department",
+   "service": "General Assistance (rent, food, utilities, medications)",
+   "categories": [
+    "housing",
+    "benefits"
+   ],
+   "description": "Voucher-based interim assistance for Nashua residents in financial hardship; confidential interview; apply in person with photo ID and Social Security card.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "18 Mulberry Street",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03060",
+   "phone": "603-589-4555",
+   "phones": [
+    {
+     "number": "603-589-4555",
+     "description": "Welfare Dept."
+    }
+   ],
+   "website": "https://www.nashuanh.gov",
+   "hours": "Call",
+   "call_to_confirm": true,
+   "eligibility": "Nashua residents",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-catholic-charities",
+   "name": "Catholic Charities NH – Nashua",
+   "service": "Help with electric/gas disconnect notices; financial coaching (English/Spanish)",
+   "categories": [
+    "housing",
+    "fuel"
+   ],
+   "description": "Financial assistance with utility disconnect notices; financial literacy and advocacy.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "3 Crown Street",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03060",
+   "phone": "603-889-9431",
+   "phones": [
+    {
+     "number": "603-889-9431",
+     "description": "main"
+    }
+   ],
+   "hours": "Call",
+   "call_to_confirm": true,
+   "eligibility": "Call",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-nhra",
+   "name": "Nashua Housing & Redevelopment Authority",
+   "service": "Public & affordable housing applications",
+   "categories": [
+    "housing"
+   ],
+   "description": "Affordable housing for low-income elderly, disabled and families.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "40 East Pearl Street",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03060",
+   "phone": "603-883-5661",
+   "phones": [
+    {
+     "number": "603-883-5661",
+     "description": "main"
+    }
+   ],
+   "hours": "Call",
+   "call_to_confirm": true,
+   "eligibility": "Income-based",
+   "fees": "Varies",
+   "source_urls": [
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-dhhs-district-office",
+   "name": "NH Department of Health and Human Services",
+   "service": "DHHS Southern District Office – SNAP, Medicaid, cash assistance, child care applications",
+   "categories": [
+    "benefits"
+   ],
+   "description": "Apply online at NH EASY (nheasy.nh.gov) or in person; DHHS Customer Service 1-844-ASK-DHHS.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "26 Whipple Street",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03060",
+   "phone": "603-883-7726",
+   "phones": [
+    {
+     "number": "603-883-7726",
+     "description": "district office"
+    },
+    {
+     "number": "1-844-275-3447",
+     "description": "DHHS Customer Service"
+    }
+   ],
+   "website": "https://www.dhhs.nh.gov/apply-assistance",
+   "hours": "Call to confirm lobby hours",
+   "call_to_confirm": true,
+   "eligibility": "NH residents",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit",
+    "https://www.dhhs.nh.gov/apply-assistance"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-nh-603-legal-aid",
+   "name": "603 Legal Aid / NH Legal Assistance (central intake)",
+   "service": "Free civil legal help (housing, public benefits, domestic violence)",
+   "categories": [
+    "legal",
+    "benefits"
+   ],
+   "description": "Central intake for civil legal aid for low-income people and older adults; apply online 24/7.",
+   "region": "statewide_nh",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": true,
+   "phone": "1-800-639-5290",
+   "phones": [
+    {
+     "number": "1-800-639-5290",
+     "description": "intake"
+    },
+    {
+     "number": "603-224-3333",
+     "description": "603 Legal Aid"
+    }
+   ],
+   "website": "https://www.603legalaid.org",
+   "hours": "Phone intake limited hours — see website",
+   "call_to_confirm": true,
+   "eligibility": "Low income / 60+",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.603legalaid.org",
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-ssa-nashua",
+   "name": "Social Security Administration – Nashua",
+   "service": "SSI / SSDI / Social Security applications, replacement cards",
+   "categories": [
+    "benefits"
+   ],
+   "description": "Applications for SSI, disability, retirement; Social Security cards.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "175 Amherst Street",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03064",
+   "phone": "1-800-772-1213",
+   "phones": [
+    {
+     "number": "1-800-772-1213",
+     "description": "SSA national"
+    }
+   ],
+   "website": "https://www.ssa.gov",
+   "hours": "Call",
+   "call_to_confirm": true,
+   "eligibility": "Anyone",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-adrc",
+   "name": "Aging & Disability Resource Center (ServiceLink) – Nashua",
+   "service": "Information & referral, options counseling, Medicare (SHIP) counseling",
+   "categories": [
+    "benefits"
+   ],
+   "description": "No-wrong-door help for older adults and people with disabilities, caregivers; SHIP Medicare counseling.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "70 Temple Street",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03060",
+   "phone": "603-598-4709",
+   "phones": [
+    {
+     "number": "603-598-4709",
+     "description": "main"
+    }
+   ],
+   "hours": "Mon–Fri 8:30am–4:30pm (call to confirm)",
+   "call_to_confirm": true,
+   "eligibility": "All ages",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-nh-lifeline",
+   "name": "NH Department of Energy – Lifeline Telephone Assistance",
+   "service": "Lifeline phone/internet discount – NH info",
+   "categories": [
+    "benefits"
+   ],
+   "description": "Explains NH Lifeline ($9.25/mo discount; SNAP/Medicaid/SSI/FPHA/VA pension or income ≤135% FPG) and lists participating wireline companies. Apply through USAC.",
+   "region": "statewide_nh",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": true,
+   "address": "21 South Fruit Street, Suite 10",
+   "town": "Concord",
+   "state": "NH",
+   "zip": "03301",
+   "phone": "603-271-3670",
+   "phones": [
+    {
+     "number": "603-271-3670",
+     "description": "NH DOE"
+    }
+   ],
+   "website": "https://www.energy.nh.gov/consumers/help-energy-and-utility-bills/lifeline-telephone-assistance-program",
+   "hours": "Call",
+   "call_to_confirm": true,
+   "eligibility": "Low-income NH households",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.energy.nh.gov/consumers/help-energy-and-utility-bills/lifeline-telephone-assistance-program"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-nashua-transit",
+   "name": "Nashua Transit System (City of Nashua)",
+   "service": "City bus routes & ADA paratransit; free travel training",
+   "categories": [
+    "transportation"
+   ],
+   "description": "Weekday and Saturday bus service across Nashua (no Sunday service); all buses ADA accessible; free travel training.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "30 Elm Street (Transit Center)",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03060",
+   "phone": "603-880-0100",
+   "phones": [
+    {
+     "number": "603-880-0100",
+     "description": "dispatch ext. 1"
+    },
+    {
+     "number": "603-821-2030",
+     "description": "ADA questions"
+    }
+   ],
+   "website": "https://www.ridebigblue.com",
+   "hours": "Weekdays ~6am–10:35pm; Saturday ~9am–10:35pm; no Sunday service",
+   "call_to_confirm": false,
+   "eligibility": "Public",
+   "fees": "Fares apply",
+   "source_urls": [
+    "https://www.ridebigblue.com",
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-na-gate-city-bike",
+   "name": "Gate City Bike Coop",
+   "service": "No-cost bikes via agency voucher; bike repair instruction",
+   "categories": [
+    "transportation"
+   ],
+   "description": "Provides bicycles through vouchers from local agencies; open to the public Mondays 3–7pm.",
+   "region": "nashua",
+   "regions": [
+    "nashua"
+   ],
+   "states": [
+    "NH"
+   ],
+   "statewide": false,
+   "address": "17b Airport Road",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03063",
+   "phone": "603-759-9056",
+   "phones": [
+    {
+     "number": "603-759-9056",
+     "description": "main"
+    }
+   ],
+   "website": "https://www.gatecitybikecoop.org",
+   "hours": "Mon 3–7pm (call to confirm)",
+   "call_to_confirm": true,
+   "eligibility": "Voucher from partner agency",
+   "fees": "Free with voucher",
+   "source_urls": [
+    "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+   ],
+   "verification_method": "official_listing",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-us-988",
+   "name": "988 Suicide & Crisis Lifeline",
+   "service": "988 – call, text or chat 24/7",
+   "categories": [
+    "crisis",
+    "mental-health"
+   ],
+   "description": "Free, confidential support for suicidal, mental health or substance use crisis; Spanish text/chat available. Veterans press 1.",
+   "region": "national",
+   "regions": [
+    "cape_cod",
+    "nashua"
+   ],
+   "states": [
+    "MA",
+    "NH"
+   ],
+   "statewide": true,
+   "phone": "988",
+   "phones": [
+    {
+     "number": "988",
+     "description": "call or text 24/7"
+    }
+   ],
+   "website": "https://988lifeline.org",
+   "hours": "24/7",
+   "call_to_confirm": false,
+   "eligibility": "Anyone",
+   "fees": "Free",
+   "source_urls": [
+    "https://988lifeline.org"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "svc-us-lifeline-usac",
+   "name": "Universal Service Administrative Company (USAC) – Lifeline",
+   "service": "Apply for Lifeline (National Verifier)",
+   "categories": [
+    "benefits"
+   ],
+   "description": "Up to $9.25/month off phone or internet ($34.25 on Tribal lands); one per household; recertify yearly.",
+   "region": "national",
+   "regions": [
+    "cape_cod",
+    "nashua"
+   ],
+   "states": [
+    "MA",
+    "NH"
+   ],
+   "statewide": true,
+   "phone": "(800) 234-9473",
+   "phones": [
+    {
+     "number": "(800) 234-9473",
+     "description": "Lifeline Support Center"
+    }
+   ],
+   "website": "https://www.lifelinesupport.org",
+   "hours": "Call",
+   "call_to_confirm": true,
+   "eligibility": "SNAP/Medicaid/SSI/FPHA/VA pension or income ≤135% FPG",
+   "fees": "Free",
+   "source_urls": [
+    "https://www.lifelinesupport.org/do-i-qualify/",
+    "https://www.lifelinesupport.org/about-lifeline/",
+    "https://www.lifelinesupport.org/get-help/"
+   ],
+   "verification_method": "own_website",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "data_source": "navigator"
+  },
+  {
+   "id": "masshire-cape-islands",
+   "name": "MassHire Cape and Islands Career Center",
+   "categories": [
+    "jobs"
+   ],
+   "description": "Free job search help, training, and workshops.",
+   "address": "372 North Street",
+   "town": "Hyannis",
+   "state": "MA",
+   "zip": "02601",
+   "phone": "508-771-5627",
+   "website": "https://www.masshire-capeandislands.com/",
+   "hours": "Mon–Fri 8am–4pm",
+   "serves": [
+    "Falmouth",
+    "Mashpee"
+   ],
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "states": [
+    "MA"
+   ],
+   "regions": [
+    "cape_cod"
+   ],
+   "source_urls": [
+    "https://www.masshire-capeandislands.com/contact/"
+   ],
+   "data_source": "web-team",
+   "statewide": false
+  },
+  {
+   "id": "sccls",
+   "name": "South Coastal Counties Legal Services",
+   "categories": [
+    "legal"
+   ],
+   "description": "Free civil legal help (housing, benefits, family, and more) for people with low income on Cape Cod and the South Coast. Intake line Mon–Thu 9am–2pm.",
+   "town": "Hyannis",
+   "state": "MA",
+   "zip": "02601",
+   "phone": "800-244-9023",
+   "website": "https://sccls.org/",
+   "serves": [
+    "Falmouth",
+    "Mashpee"
+   ],
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "states": [
+    "MA"
+   ],
+   "regions": [
+    "cape_cod"
+   ],
+   "source_urls": [
+    "https://sccls.org/get-help/"
+   ],
+   "data_source": "web-team",
+   "statewide": false
+  },
+  {
+   "id": "mash-sober-homes",
+   "name": "MASH Certified Sober Homes directory",
+   "categories": [
+    "housing"
+   ],
+   "description": "Massachusetts Alliance for Sober Housing list of certified sober homes that meet national standards. Contact homes directly for openings.",
+   "state": "MA",
+   "statewide": true,
+   "website": "https://mashsoberhousing.org/certified-residences/",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "states": [
+    "MA"
+   ],
+   "regions": [
+    "cape_cod"
+   ],
+   "source_urls": [
+    "https://mashsoberhousing.org/certified-residences/"
+   ],
+   "data_source": "web-team"
+  },
+  {
+   "id": "nh-works-nashua",
+   "name": "NH Works — Nashua",
+   "categories": [
+    "jobs"
+   ],
+   "description": "Job search help, training, and unemployment services.",
+   "address": "6 Townsend West",
+   "town": "Nashua",
+   "state": "NH",
+   "zip": "03063",
+   "phone": "603-882-5177",
+   "website": "https://www.nhes.nh.gov/resources/office-locations",
+   "hours": "Mon–Fri 8am–4:30pm",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "states": [
+    "NH"
+   ],
+   "regions": [
+    "nashua"
+   ],
+   "source_urls": [
+    "https://www.nhes.nh.gov/resources/office-locations"
+   ],
+   "data_source": "web-team",
+   "statewide": false
+  },
+  {
+   "id": "nh-coordinated-entry",
+   "name": "NH Coordinated Entry (homeless services)",
+   "categories": [
+    "housing"
+   ],
+   "description": "If you are homeless or about to be, call to find available shelter beds and housing programs across New Hampshire.",
+   "state": "NH",
+   "statewide": true,
+   "phone": "844-800-9911",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "states": [
+    "NH"
+   ],
+   "regions": [
+    "nashua"
+   ],
+   "source_urls": [
+    "https://harborcarenh.org/contact-us/"
+   ],
+   "data_source": "web-team"
+  },
+  {
+   "id": "root-to-rise-cafe",
+   "name": "Root to Rise Recovery Cafe",
+   "categories": [
+    "peer-support"
+   ],
+   "description": "Recovery cafe and community from Inspiration Is Everywhere. Contact us for gatherings, peer support, and help finding resources.",
+   "serves": [
+    "Falmouth",
+    "Mashpee",
+    "Nashua"
+   ],
+   "phone": "603-721-2088",
+   "email": "roottorisema@gmail.com",
+   "website": "index.html",
+   "verified": true,
+   "last_verified": "2026-09-26",
+   "states": [
+    "MA",
+    "NH"
+   ],
+   "statewide": true,
+   "regions": [
+    "cape_cod",
+    "nashua"
+   ],
+   "source_urls": [
+    "index.html"
+   ],
+   "data_source": "web-team"
+  }
+ ]
+}

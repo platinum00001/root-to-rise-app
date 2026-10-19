@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0",
+  "status_label": "Other places to check (not income-screened)",
+  "note": "Simple pointers shown after the main screener results. They do not estimate eligibility; they only suggest where to ask. Edit in /admin > Eligibility extras.",
+  "questions": [
+    { "id": "insurance", "text": "Do you have health insurance right now?", "type": "enum",
+      "options": ["none", "medicaid", "medicare", "private", "va", "not_sure"],
+      "option_labels": { "none": "No insurance", "medicaid": "MassHealth / NH Medicaid", "medicare": "Medicare", "private": "Through a job or private plan", "va": "VA / TRICARE", "not_sure": "Not sure" },
+      "sensitive": true, "health_data": false },
+    { "id": "veteran", "text": "Are you a veteran?", "type": "boolean", "sensitive": false, "health_data": false },
+    { "id": "in_recovery", "text": "Are you in recovery or treatment right now, or looking for it?", "type": "boolean", "sensitive": true, "health_data": true }
+  ],
+  "programs": [
+    { "id": "va_health", "name": "VA health care and veterans benefits", "show_if": [{ "field": "veteran", "op": "eq", "value": true }],
+      "message": "Veterans may be able to get VA health care, including substance use and mental health treatment. Check with the VA — it's free to ask.",
+      "links": [{ "label": "VA health care eligibility", "url": "https://www.va.gov/health-care/eligibility/" }, { "label": "Veterans Crisis Line: dial 988 then press 1", "url": "tel:988" }] },
+    { "id": "recovery_support", "name": "Peer recovery support near you", "show_if": [{ "field": "in_recovery", "op": "eq", "value": true }],
+      "message": "Peer recovery centers, meetings, and recovery coaches are free. See local options in our resource finder, or reach out to Root to Rise.",
+      "links": [{ "label": "Peer support & meetings", "url": "resources.html?category=peer-support" }, { "label": "Treatment & detox", "url": "resources.html?category=treatment" }, { "label": "Email Root to Rise", "url": "mailto:roottorisema@gmail.com" }] },
+    { "id": "marketplace_ma", "name": "Massachusetts Health Connector", "states": ["MA"], "show_if": [{ "field": "insurance", "op": "in", "value": ["none", "not_sure"] }],
+      "message": "If you don't have insurance and MassHealth isn't a fit, the Health Connector may offer low-cost plans with help paying premiums.",
+      "links": [{ "label": "MA Health Connector", "url": "https://www.mahealthconnector.org/" }] },
+    { "id": "marketplace_nh", "name": "HealthCare.gov (New Hampshire)", "states": ["NH"], "show_if": [{ "field": "insurance", "op": "in", "value": ["none", "not_sure"] }],
+      "message": "If you don't have insurance and Medicaid isn't a fit, HealthCare.gov may offer low-cost plans with help paying premiums.",
+      "links": [{ "label": "HealthCare.gov", "url": "https://www.healthcare.gov/" }] },
+    { "id": "ssi", "name": "SSI (Supplemental Security Income)", "show_if_any": [{ "field": "has_disability", "op": "eq", "value": true }, { "field": "age", "op": "gte", "value": 65 }],
+      "message": "SSI pays monthly cash to people with very low income and resources who are 65+, blind, or have a disability. Social Security decides — check with them.",
+      "links": [{ "label": "SSI at ssa.gov", "url": "https://www.ssa.gov/ssi" }] }
+  ]
+}

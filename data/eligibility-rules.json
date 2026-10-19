@@ -1,0 +1,1541 @@
+{
+  "schema_version": "1.0.0",
+  "generated_on": "2026-09-26",
+  "publisher": {
+    "name": "Root to Rise — Inspiration Is Everywhere, Inc.",
+    "ein": "82-5186366",
+    "regions": [
+      "Falmouth/Mashpee, MA (Cape Cod)",
+      "Nashua, NH (planned)"
+    ]
+  },
+  "fiscal_year_context": {
+    "current": "Federal FY2026 (2025-10-01 to 2026-09-30)",
+    "upcoming": "Federal FY2027 starts 2026-10-01 — SNAP federal COLA published 2026-08-21 and included under fy2027_update. The screener's SNAP decision uses the STATE broad-based categorical (200% FPL) limits, which the federal Oct-1 COLA does not change; update snap_nh.gross_limit_200 when NH DHHS posts its October 2026 release."
+  },
+  "disclaimer": {
+    "title": "Screening only — not a decision",
+    "text": [
+      "This tool gives a rough 'you may qualify' estimate based on a few answers. It is NOT an application, a legal opinion, or an eligibility determination. Only the agency that runs each program can decide.",
+      "Results never mean you are not allowed to apply. Anyone can apply for any program, and we encourage you to.",
+      "Your answers stay in your browser by default. Nothing is sent to Root to Rise or stored unless you choose to share it.",
+      "We do not store health information (pregnancy, disability, Medicare, recovery status) without your explicit, separate consent.",
+      "Income limits change every year. Figures here were checked against official sources on the 'as of' dates shown.",
+      "Root to Rise / Inspiration Is Everywhere (EIN 82-5186366) is a community nonprofit, not a government agency."
+    ],
+    "privacy_requirements_for_web_app": {
+      "default_storage": "in_memory_only",
+      "allow_localStorage_without_consent": false,
+      "send_answers_to_server": false,
+      "analytics_on_answers": false,
+      "health_data_fields": [
+        "has_elderly_or_disabled_member",
+        "has_disability",
+        "is_pregnant",
+        "expected_babies",
+        "is_postpartum_or_breastfeeding",
+        "on_medicare"
+      ],
+      "consent_required_for": [
+        "saving answers",
+        "sharing with a recovery coach",
+        "any server submission"
+      ],
+      "clear_button_required": true
+    }
+  },
+  "result_wording": {
+    "may_qualify": "You may qualify. This is not a decision — only the program can decide. We recommend applying.",
+    "might_not_qualify_income": "You might not qualify based on income, but you can still apply. Some income is not counted, and special rules may apply to your situation.",
+    "check_with_program": "We can't estimate this one from your answers. Rules depend on details (like your town or situation) — please contact the program; it's free to ask.",
+    "not_applicable": null
+  },
+  "federal_poverty_guidelines_2026": {
+    "unit": "USD_per_year",
+    "basis": "100% HHS poverty guideline, 48 contiguous states + DC",
+    "by_household_size": {
+      "1": 15960,
+      "2": 21640,
+      "3": 27320,
+      "4": 33000,
+      "5": 38680,
+      "6": 44360,
+      "7": 50040,
+      "8": 55720
+    },
+    "each_additional_person": 5680,
+    "effective": "Published 2026-01-15 (91 FR 1797)",
+    "source_url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+    "as_of": "2026-01-15",
+    "verified_on": "2026-09-26"
+  },
+  "questions": [
+    {
+      "id": "state",
+      "text": "Which state do you live in?",
+      "type": "enum",
+      "options": [
+        "MA",
+        "NH",
+        "other"
+      ],
+      "required": true,
+      "sensitive": false
+    },
+    {
+      "id": "household_size",
+      "text": "How many people live with you and share food/expenses (including you)?",
+      "type": "integer",
+      "min": 1,
+      "max": 20,
+      "required": true,
+      "sensitive": false,
+      "help": "For WIC and MassHealth, a pregnant person counts the unborn baby(ies) — the screener adds this automatically if you say you're pregnant."
+    },
+    {
+      "id": "monthly_gross_income",
+      "text": "About how much money does your household get each month before taxes? (jobs, Social Security, SSI/SSDI, unemployment, child support, etc.)",
+      "type": "number",
+      "min": 0,
+      "required": true,
+      "sensitive": true
+    },
+    {
+      "id": "age",
+      "text": "How old are you?",
+      "type": "integer",
+      "min": 0,
+      "max": 120,
+      "required": false,
+      "sensitive": false
+    },
+    {
+      "id": "has_elderly_or_disabled_member",
+      "text": "Is anyone in your household 60 or older, or getting disability benefits?",
+      "type": "boolean",
+      "required": false,
+      "sensitive": true,
+      "health_data": true
+    },
+    {
+      "id": "has_disability",
+      "text": "Do you have a disability?",
+      "type": "boolean",
+      "required": false,
+      "sensitive": true,
+      "health_data": true
+    },
+    {
+      "id": "is_pregnant",
+      "text": "Is anyone in your household pregnant?",
+      "type": "boolean",
+      "required": false,
+      "sensitive": true,
+      "health_data": true
+    },
+    {
+      "id": "expected_babies",
+      "text": "If pregnant: how many babies are expected?",
+      "type": "integer",
+      "min": 1,
+      "max": 4,
+      "default": 1,
+      "required": false,
+      "sensitive": true,
+      "health_data": true
+    },
+    {
+      "id": "is_postpartum_or_breastfeeding",
+      "text": "Has anyone had a baby in the last 12 months (or is breastfeeding)?",
+      "type": "boolean",
+      "required": false,
+      "sensitive": true,
+      "health_data": true
+    },
+    {
+      "id": "has_child_under_5",
+      "text": "Are there children under age 5 in your household?",
+      "type": "boolean",
+      "required": false,
+      "sensitive": false
+    },
+    {
+      "id": "has_child_under_19",
+      "text": "Are there children under age 19 in your household?",
+      "type": "boolean",
+      "required": false,
+      "sensitive": false
+    },
+    {
+      "id": "on_medicare",
+      "text": "Do you have Medicare?",
+      "type": "boolean",
+      "required": false,
+      "sensitive": true,
+      "health_data": true
+    },
+    {
+      "id": "receives",
+      "text": "Does anyone in your household already get any of these?",
+      "type": "multi_enum",
+      "options": [
+        "SNAP",
+        "Medicaid",
+        "SSI",
+        "TANF",
+        "FPHA",
+        "VA_PENSION",
+        "WIC"
+      ],
+      "option_labels": {
+        "SNAP": "SNAP (food stamps / EBT)",
+        "Medicaid": "MassHealth or NH Medicaid",
+        "SSI": "SSI (Supplemental Security Income)",
+        "TANF": "Cash assistance (TAFDC / EAEDC in MA, FANF / TANF in NH)",
+        "FPHA": "Public housing or Section 8 voucher",
+        "VA_PENSION": "Veterans Pension or Survivors Pension",
+        "WIC": "WIC"
+      },
+      "required": false,
+      "sensitive": true
+    },
+    {
+      "id": "housing_crisis",
+      "text": "Are you facing eviction, a utility shutoff, or other housing emergency?",
+      "type": "boolean",
+      "required": false,
+      "sensitive": true
+    },
+    {
+      "id": "experiencing_homelessness",
+      "text": "Do you need a place to stay tonight or are you without stable housing?",
+      "type": "boolean",
+      "required": false,
+      "sensitive": true
+    },
+    {
+      "id": "pays_for_heat",
+      "text": "Do you pay for heat (or is heat included in your rent)?",
+      "type": "enum",
+      "options": [
+        "pays_heat",
+        "heat_in_rent_unsubsidized",
+        "heat_in_rent_subsidized",
+        "not_sure"
+      ],
+      "required": false,
+      "sensitive": false
+    }
+  ],
+  "programs": [
+    {
+      "id": "snap_ma",
+      "name": "SNAP (food assistance) — Massachusetts DTA",
+      "category": "food",
+      "states": [
+        "MA"
+      ],
+      "screening_questions": [
+        "state",
+        "household_size",
+        "monthly_gross_income",
+        "has_elderly_or_disabled_member",
+        "receives"
+      ],
+      "rules": {
+        "logic": "If household receives SSI, TANF/TAFDC/EAEDC -> may_qualify (categorical). Else if gross monthly income <= gross_limit_200 -> may_qualify. Else if has_elderly_or_disabled_member -> check_with_program (no gross income test; asset + net income tests apply). Else -> might_not_qualify_income.",
+        "categorical_shortcuts": [
+          {
+            "if_receives_any": [
+              "SSI",
+              "TANF"
+            ],
+            "result": "may_qualify",
+            "note": "Households where all members receive SSI or TANF-funded cash may be 'categorically eligible' (federal rule).",
+            "source_url": "https://www.fns.usda.gov/snap/recipient/eligibility",
+            "as_of": "2026-08-28"
+          }
+        ],
+        "broad_based_categorical_eligibility": {
+          "state_uses_bbce": true,
+          "gross_income_limit_pct_fpl": 200,
+          "asset_test_for_most": false,
+          "elderly_disabled_rule": "No gross income test for households with a member 60+ or getting disability-based benefits; they must meet net income test (and asset test if gross > 200% FPL).",
+          "source_url": "https://www.masslegalservices.org/content/68-there-gross-income-test-snap",
+          "as_of": "2026-02-01"
+        },
+        "gross_limit_200": {
+          "unit": "USD_per_month",
+          "basis": "200% FPL gross monthly (MA broad-based categorical eligibility)",
+          "by_household_size": {
+            "1": 2660,
+            "2": 3607,
+            "3": 4553,
+            "4": 5500,
+            "5": 6447,
+            "6": 7393,
+            "7": 8340,
+            "8": 9287
+          },
+          "each_additional_person": 947,
+          "effective": "Effective 2026-02-01 (based on 2026 HHS poverty guidelines). Also shown on DTA SNAP page.",
+          "source_url": "https://www.mass.gov/doc/gross-monthly-categorical-eligibility-income-standards-as-referenced-at-106-cmr-364976/download",
+          "as_of": "2026-02-01",
+          "verified_on": "2026-09-26",
+          "note": "MA updates this chart when new poverty guidelines publish (usually Feb). Stays valid into FFY2027 until DTA revises it."
+        },
+        "max_monthly_benefit_fy2026": {
+          "unit": "USD_per_month",
+          "basis": "Maximum SNAP allotment, 48 states + DC",
+          "by_household_size": {
+            "1": 298,
+            "2": 546,
+            "3": 785,
+            "4": 994,
+            "5": 1183,
+            "6": 1421,
+            "7": 1571,
+            "8": 1789
+          },
+          "each_additional_person": 218,
+          "effective": "2025-10-01 to 2026-09-30",
+          "source_url": "https://www.mass.gov/how-to/supplemental-nutrition-assistance-program-snap-formerly-known-as-food-stamps",
+          "as_of": "2025-10-01",
+          "verified_on": "2026-09-26"
+        },
+        "fy2027_update": {
+          "effective": "2026-10-01",
+          "federal_gross_130": {
+            "unit": "USD_per_month",
+            "basis": "130% FPL gross (federal, non-BBCE households)",
+            "by_household_size": {
+              "1": 1729,
+              "2": 2345,
+              "3": 2960,
+              "4": 3575,
+              "5": 4191,
+              "6": 4806,
+              "7": 5421,
+              "8": 6037
+            },
+            "each_additional_person": 616,
+            "effective": "2026-10-01 to 2027-09-30",
+            "source_url": "https://www.usda.gov/sites/default/files/guidance-documents/fna.snap-cola2027.pdf",
+            "as_of": "2026-08-21",
+            "verified_on": "2026-09-26"
+          },
+          "federal_net_100": {
+            "unit": "USD_per_month",
+            "basis": "100% FPL net",
+            "by_household_size": {
+              "1": 1330,
+              "2": 1804,
+              "3": 2277,
+              "4": 2750,
+              "5": 3224,
+              "6": 3697,
+              "7": 4170,
+              "8": 4644
+            },
+            "each_additional_person": 474,
+            "effective": "2026-10-01 to 2027-09-30",
+            "source_url": "https://www.usda.gov/sites/default/files/guidance-documents/fna.snap-cola2027.pdf",
+            "as_of": "2026-08-21",
+            "verified_on": "2026-09-26"
+          },
+          "max_benefit_1_person": {
+            "value": 306,
+            "unit": "USD_per_month",
+            "source_url": "https://www.fns.usda.gov/fdpir/net-monthly-income-standards",
+            "as_of": "2026-08-21",
+            "note": "FDPIR home-care meal deduction equals the 48-state 1-person SNAP maximum for FY2027."
+          },
+          "max_benefit_other_sizes": null,
+          "max_benefit_other_sizes_note": "Not verified on an official page we could access on 2026-09-26 (USDA memo PDF blocked). Third-party sites report $1,023 for 4 people — do not display until verified.",
+          "ma_200pct_chart_change": null,
+          "ma_200pct_chart_note": "No new MA 200% chart announced as of 2026-09-26; the Feb 2026 chart already uses 2026 poverty guidelines."
+        },
+        "federal_reference_fy2026": {
+          "gross_130": {
+            "unit": "USD_per_month",
+            "basis": "130% FPL gross",
+            "by_household_size": {
+              "1": 1696,
+              "2": 2292,
+              "3": 2888,
+              "4": 3483,
+              "5": 4079,
+              "6": 4675,
+              "7": 5271,
+              "8": 5867
+            },
+            "each_additional_person": 596,
+            "effective": "2025-10-01 to 2026-09-30",
+            "source_url": "https://www.fns.usda.gov/snap/recipient/eligibility",
+            "as_of": "2026-08-28",
+            "verified_on": "2026-09-26"
+          },
+          "net_100": {
+            "unit": "USD_per_month",
+            "basis": "100% FPL net",
+            "by_household_size": {
+              "1": 1305,
+              "2": 1763,
+              "3": 2221,
+              "4": 2680,
+              "5": 3138,
+              "6": 3596,
+              "7": 4055,
+              "8": 4513
+            },
+            "each_additional_person": 459,
+            "effective": "2025-10-01 to 2026-09-30",
+            "source_url": "https://www.fns.usda.gov/snap/recipient/eligibility",
+            "as_of": "2026-08-28",
+            "verified_on": "2026-09-26"
+          }
+        },
+        "non_financial_notes": [
+          "Work rules for able-bodied adults without dependents changed under the 2025 federal law (One Big Beautiful Bill Act); FNS says it is updating guidance. Do not screen on work rules.",
+          "Some non-citizens are not eligible; SNAP is not part of the public charge test in MA (per DTA)."
+        ]
+      },
+      "result_wording": {
+        "may_qualify": "You may qualify. This is not a decision — only the program can decide. We recommend applying.",
+        "might_not_qualify_income": "You might not qualify based on income, but you can still apply. Some income is not counted, and special rules may apply to your situation.",
+        "check_with_program": "We can't estimate this one from your answers. Rules depend on details (like your town or situation) — please contact the program; it's free to ask.",
+        "not_applicable": null
+      },
+      "next_steps": {
+        "apply_online": "https://www.dtaconnect.com",
+        "apply_phone": "877-382-2363 (DTA Assistance Line; press 7 to apply; 100+ languages)",
+        "local_office": {
+          "cape_cod": {
+            "name": "DTA Hyannis Transitional Assistance Office",
+            "address": "500 Main Street, Hyannis, MA 02601",
+            "phone": "508-862-6600",
+            "hours": "Mon–Fri 8:00am–5:00pm",
+            "source_url": "https://www.mass.gov/locations/dta-hyannis-transitional-assistance-office"
+          }
+        },
+        "application_help": [
+          {
+            "name": "Project Bread FoodSource Hotline",
+            "phone": "1-800-645-8333",
+            "source_url": "https://www.projectbread.org/get-help"
+          },
+          {
+            "name": "Community Action Committee of Cape Cod & Islands (SNAP application assistance)",
+            "phone": "508-771-1727",
+            "source_url": "https://www.cacci.cc"
+          }
+        ],
+        "documents": [
+          "Photo ID (driver's license, state ID, or other)",
+          "Proof of income for the last 4 weeks / 30 days (pay stubs, benefit award letters, unemployment, child support)",
+          "Proof of address (lease, utility bill, or letter) — if homeless, tell the worker; you can still apply",
+          "Social Security numbers for people applying (if they have one)",
+          "Rent/mortgage and utility bills (can raise SNAP benefits)"
+        ],
+        "tip": "If approved, benefits go back to the date you applied — apply even with a partial application."
+      },
+      "sources": [
+        "https://www.mass.gov/how-to/supplemental-nutrition-assistance-program-snap-formerly-known-as-food-stamps",
+        "https://www.mass.gov/doc/gross-monthly-categorical-eligibility-income-standards-as-referenced-at-106-cmr-364976/download",
+        "https://www.masslegalservices.org/content/68-there-gross-income-test-snap",
+        "https://www.fns.usda.gov/snap/recipient/eligibility",
+        "https://www.usda.gov/sites/default/files/guidance-documents/fna.snap-cola2027.pdf",
+        "https://www.mass.gov/locations/dta-hyannis-transitional-assistance-office"
+      ]
+    },
+    {
+      "id": "snap_nh",
+      "name": "SNAP (food assistance) — New Hampshire DHHS",
+      "category": "food",
+      "states": [
+        "NH"
+      ],
+      "screening_questions": [
+        "state",
+        "household_size",
+        "monthly_gross_income",
+        "has_elderly_or_disabled_member",
+        "receives"
+      ],
+      "rules": {
+        "logic": "If receives SSI or TANF -> may_qualify. Else if gross <= gross_limit_200 -> may_qualify (Expanded Categorical Eligibility). Else if has_elderly_or_disabled_member -> check_with_program (no gross test for elderly/disabled 'target population'). Else -> might_not_qualify_income.",
+        "categorical_shortcuts": [
+          {
+            "if_receives_any": [
+              "SSI",
+              "TANF"
+            ],
+            "result": "may_qualify",
+            "source_url": "https://www.fns.usda.gov/snap/recipient/eligibility",
+            "as_of": "2026-08-28"
+          }
+        ],
+        "broad_based_categorical_eligibility": {
+          "state_uses_bbce": true,
+          "state_term": "Expanded Categorical Eligibility (ECE)",
+          "gross_income_limit_pct_fpl": 200,
+          "note": "ECE households: 200% FPG gross test, no net income test, automatically resource-eligible.",
+          "source_url": "https://www.dhhs.nh.gov/fsm_htm/html/611_01_computing_income_eligibility_fsm.htm",
+          "as_of": "2026-09-26"
+        },
+        "gross_limit_200": {
+          "unit": "USD_per_month",
+          "basis": "200% FPG gross monthly (NH Expanded Categorical Eligibility)",
+          "by_household_size": {
+            "1": 2609,
+            "2": 3525,
+            "3": 4442,
+            "4": 5359,
+            "5": 6275,
+            "6": 7192,
+            "7": 8109,
+            "8": 9025
+          },
+          "each_additional_person": 917,
+          "effective": "2025-10-01 (SR 25-32); based on 2025 poverty guidelines",
+          "source_url": "https://www.dhhs.nh.gov/fsm_htm/html/601_table_e_snap_maximum_monthly_income_limits_fsm.htm",
+          "as_of": "2025-10-01",
+          "verified_on": "2026-09-26"
+        },
+        "gross_limit_165_separate_elderly_disabled": {
+          "unit": "USD_per_month",
+          "basis": "165% FPG",
+          "by_household_size": {
+            "1": 2152,
+            "2": 2909,
+            "3": 3665,
+            "4": 4421,
+            "5": 5177,
+            "6": 5934,
+            "7": 6690,
+            "8": 7446
+          },
+          "each_additional_person": 757,
+          "effective": "2025-10-01",
+          "source_url": "https://www.dhhs.nh.gov/sr_htm/html/sr_25-32_dated_10_25.htm",
+          "as_of": "2025-10-01",
+          "verified_on": "2026-09-26"
+        },
+        "fy2027_update": {
+          "effective": "2026-10-01",
+          "nh_gross_limit_200": null,
+          "note": "NH DHHS had not posted its October 2026 SNAP mass-change release (SR) as of 2026-09-26. Expect 200% of 2026 FPG (about $2,660/month for 1 person) but DO NOT display until NH publishes. Federal FY2027 130%/100% standards are in snap_ma.rules.fy2027_update."
+        }
+      },
+      "result_wording": {
+        "may_qualify": "You may qualify. This is not a decision — only the program can decide. We recommend applying.",
+        "might_not_qualify_income": "You might not qualify based on income, but you can still apply. Some income is not counted, and special rules may apply to your situation.",
+        "check_with_program": "We can't estimate this one from your answers. Rules depend on details (like your town or situation) — please contact the program; it's free to ask.",
+        "not_applicable": null
+      },
+      "next_steps": {
+        "apply_online": "https://nheasy.nh.gov",
+        "apply_phone": "1-844-275-3447 (DHHS Customer Service, 1-844-ASK-DHHS)",
+        "local_office": {
+          "nashua": {
+            "name": "NH DHHS Southern District Office (Nashua)",
+            "address": "26 Whipple Street, Nashua, NH 03060",
+            "phone": "603-883-7726",
+            "source_url": "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit",
+            "hours": "Call to confirm"
+          }
+        },
+        "application_help": [
+          {
+            "name": "NH Food Bank SNAP Application Assistance",
+            "phone": "1-877-347-7627",
+            "source_url": "https://www.nhfoodbank.org/snap"
+          }
+        ],
+        "documents": [
+          "Photo ID (driver's license, state ID, or other)",
+          "Proof of income for the last 4 weeks / 30 days (pay stubs, benefit award letters, unemployment, child support)",
+          "Proof of address (lease, utility bill, or letter) — if homeless, tell the worker; you can still apply",
+          "Social Security numbers for people applying (if they have one)",
+          "Rent/mortgage and utility bills (can raise SNAP benefits)"
+        ]
+      },
+      "sources": [
+        "https://www.dhhs.nh.gov/fsm_htm/html/601_table_e_snap_maximum_monthly_income_limits_fsm.htm",
+        "https://www.dhhs.nh.gov/sr_htm/html/sr_25-32_dated_10_25.htm",
+        "https://www.dhhs.nh.gov/fsm_htm/html/611_01_computing_income_eligibility_fsm.htm",
+        "https://www.dhhs.nh.gov/apply-assistance",
+        "https://www.fns.usda.gov/snap/recipient/eligibility"
+      ]
+    },
+    {
+      "id": "masshealth",
+      "name": "MassHealth (Massachusetts Medicaid/CHIP)",
+      "category": "health_coverage",
+      "states": [
+        "MA"
+      ],
+      "screening_questions": [
+        "state",
+        "household_size",
+        "monthly_gross_income",
+        "age",
+        "is_pregnant",
+        "expected_babies",
+        "has_child_under_19",
+        "has_disability",
+        "on_medicare",
+        "receives"
+      ],
+      "rules": {
+        "logic": "Already has Medicaid -> may_qualify (keep coverage, renew). Adults 19–64: income <= adult_133_plus5 -> may_qualify. Pregnant: household size + expected babies; income <= pregnant_200_plus5 -> may_qualify. Children under 19: income <= children_300_plus5 -> may_qualify (children may qualify even if parents don't). Disability: CommonHealth has no upper income limit -> may_qualify (premium may apply). Age 65+: income <= seniors_100_plus20 -> may_qualify (asset limits apply); else if <= msp_qi_225_plus20 -> may_qualify for Medicare Savings Program (1–2 person only). Otherwise might_not_qualify_income and point to Health Connector.",
+        "income_counting_note": "MassHealth uses MAGI income (roughly taxable income) and subtracts 5 percentage points of FPL. Tables below already include the 5% deduction (MLRI table built from MassHealth desk guide).",
+        "adult_133_plus5": {
+          "unit": "USD_per_month",
+          "basis": "133% FPL + 5% deduction (MassHealth Standard/CarePlus, adults under 65)",
+          "by_household_size": {
+            "1": 1835.4,
+            "2": 2488.6,
+            "3": 3141.8,
+            "4": 3795.0,
+            "5": 4448.2,
+            "6": 5101.4,
+            "7": 5754.6,
+            "8": 6407.8
+          },
+          "each_additional_person": 629.53,
+          "effective": "2026-03-01 to 2027-02-28",
+          "source_url": "https://www.masslegalservices.org/content/2026-masshealth-programs-and-health-connector-income-standards",
+          "as_of": "2026-03-01",
+          "verified_on": "2026-09-26"
+        },
+        "under21_150_plus5": {
+          "unit": "USD_per_month",
+          "basis": "150% FPL + 5% (MassHealth Standard, children/young adults under 21)",
+          "by_household_size": {
+            "1": 2061.5,
+            "2": 2795.17,
+            "3": 3528.83,
+            "4": 4262.5,
+            "5": 4996.17,
+            "6": 5729.83,
+            "7": 6463.5,
+            "8": 7197.17
+          },
+          "each_additional_person": 710.0,
+          "effective": "2026-03-01 to 2027-02-28",
+          "source_url": "https://www.masslegalservices.org/content/2026-masshealth-programs-and-health-connector-income-standards",
+          "as_of": "2026-03-01",
+          "verified_on": "2026-09-26"
+        },
+        "pregnant_200_plus5": {
+          "unit": "USD_per_month",
+          "basis": "200% FPL + 5% (pregnant individuals & infants, MassHealth Standard)",
+          "by_household_size": {
+            "1": 2726.5,
+            "2": 3696.83,
+            "3": 4667.17,
+            "4": 5637.5,
+            "5": 6607.83,
+            "6": 7578.17,
+            "7": 8548.5,
+            "8": 9518.83
+          },
+          "each_additional_person": 946.67,
+          "effective": "2026-03-01 to 2027-02-28",
+          "source_url": "https://www.masslegalservices.org/content/2026-masshealth-programs-and-health-connector-income-standards",
+          "as_of": "2026-03-01",
+          "verified_on": "2026-09-26",
+          "note": "Add the expected baby(ies) to household size."
+        },
+        "children_300_plus5": {
+          "unit": "USD_per_month",
+          "basis": "300% FPL + 5% (children under 19, MassHealth Family Assistance)",
+          "by_household_size": {
+            "1": 4056.5,
+            "2": 5500.17,
+            "3": 6943.83,
+            "4": 8387.5,
+            "5": 9831.17,
+            "6": 11274.83,
+            "7": 12718.5,
+            "8": 14162.17
+          },
+          "each_additional_person": 1420.0,
+          "effective": "2026-03-01 to 2027-02-28",
+          "source_url": "https://www.masslegalservices.org/content/2026-masshealth-programs-and-health-connector-income-standards",
+          "as_of": "2026-03-01",
+          "verified_on": "2026-09-26"
+        },
+        "seniors_100_plus20": {
+          "unit": "USD_per_month",
+          "basis": "100% FPL + $20 (MassHealth Standard, age 65+, non-MAGI)",
+          "by_household_size": {
+            "1": 1350,
+            "2": 1824,
+            "3": 2297,
+            "4": 2770,
+            "5": 3244,
+            "6": 3717,
+            "7": 4190,
+            "8": 4664
+          },
+          "each_additional_person": 474,
+          "effective": "2026-03-01 to 2027-02-28",
+          "source_url": "https://www.masslegalservices.org/content/2026-masshealth-programs-and-health-connector-income-standards",
+          "as_of": "2026-03-01",
+          "verified_on": "2026-09-26",
+          "note": "Asset limit $2,000 individual / $3,000 couple applies."
+        },
+        "msp_qi_225_plus20": {
+          "unit": "USD_per_month",
+          "basis": "225% FPL + $20 (Medicare Savings Program – QI; no asset test since 2024-03-01)",
+          "by_household_size": {
+            "1": 3013,
+            "2": 4078
+          },
+          "each_additional_person": null,
+          "source_url": "https://www.masslegalservices.org/content/2026-masshealth-programs-and-health-connector-income-standards",
+          "as_of": "2026-03-01",
+          "verified_on": "2026-09-26",
+          "note": "Only 1–2 person values published."
+        },
+        "commonhealth_disability": {
+          "upper_income_limit": null,
+          "note": "For people with disabilities, CommonHealth has no upper income level; premium above 150% FPL.",
+          "source_url": "https://www.masslegalservices.org/content/2026-masshealth-programs-and-health-connector-income-standards",
+          "as_of": "2026-03-01"
+        },
+        "base_fpl_chart": {
+          "source_url": "https://www.mass.gov/doc/2026-masshealth-income-standards-and-federal-poverty-guidelines-0/download",
+          "as_of": "2026-03-01",
+          "note": "Official MassHealth 2026 income standards chart (100/133/150/190/200/.../400% FPL, without the 5% deduction)."
+        },
+        "fy2027_update": {
+          "note": "MassHealth updates income standards each March 1 (next: 2027-03-01). No October change.",
+          "source_url": "https://www.masslegalservices.org/content/2026-masshealth-programs-and-health-connector-income-standards"
+        },
+        "health_connector_note": "Health Connector (ConnectorCare) uses 2025 FPL for 2026 coverage; enhanced premium tax credits expired 2025-12-31 (per MLRI table)."
+      },
+      "result_wording": {
+        "may_qualify": "You may qualify. This is not a decision — only the program can decide. We recommend applying.",
+        "might_not_qualify_income": "You might not qualify based on income, but you can still apply. Some income is not counted, and special rules may apply to your situation.",
+        "check_with_program": "We can't estimate this one from your answers. Rules depend on details (like your town or situation) — please contact the program; it's free to ask.",
+        "not_applicable": null
+      },
+      "next_steps": {
+        "apply_online": "https://www.mahealthconnector.org",
+        "apply_phone": "1-800-841-2900 (MassHealth Customer Service, Mon–Fri 8am–5pm; TTY 711)",
+        "local_help": {
+          "cape_cod": [
+            {
+              "name": "Community Action Committee of Cape Cod & Islands – Health Insurance help",
+              "phone": "508-771-1727",
+              "source_url": "https://www.cacci.cc"
+            },
+            {
+              "name": "Community Health Center of Cape Cod (Mashpee/Falmouth)",
+              "phone": "508-477-7090",
+              "source_url": "https://www.chcofcapecod.org"
+            }
+          ]
+        },
+        "documents": [
+          "Photo ID",
+          "Proof of income (pay stubs, tax return, benefit letters)",
+          "Social Security numbers (if available)",
+          "Immigration documents (if applicable)",
+          "Current health insurance info (if any)"
+        ]
+      },
+      "sources": [
+        "https://www.mass.gov/doc/2026-masshealth-income-standards-and-federal-poverty-guidelines-0/download",
+        "https://www.masslegalservices.org/content/2026-masshealth-programs-and-health-connector-income-standards",
+        "https://www.mass.gov/how-to/apply-for-masshealth-the-health-safety-net-or-the-childrens-medical-security-plan"
+      ]
+    },
+    {
+      "id": "nh_medicaid",
+      "name": "NH Medicaid incl. Granite Advantage Health Care Program",
+      "category": "health_coverage",
+      "states": [
+        "NH"
+      ],
+      "screening_questions": [
+        "state",
+        "household_size",
+        "monthly_gross_income",
+        "age",
+        "is_pregnant",
+        "expected_babies",
+        "has_child_under_19",
+        "has_disability",
+        "on_medicare",
+        "receives"
+      ],
+      "rules": {
+        "logic": "Already has Medicaid -> may_qualify. Adults 19–64, not pregnant, not on Medicare: income <= granite_advantage_133 + five_pct_disregard -> may_qualify. Pregnant (size + babies) or children under 19: income <= children_pregnant_196 + five_pct -> may_qualify; children up to expanded_cm_318 -> may_qualify (Expanded Children's Medicaid). Age 65+ or disability: different (non-MAGI) rules -> check_with_program. Otherwise might_not_qualify_income and point to HealthCare.gov.",
+        "granite_advantage_133": {
+          "unit": "USD_per_month",
+          "basis": "133% FPG net monthly (Granite Advantage)",
+          "by_household_size": {
+            "1": 1769,
+            "2": 2399,
+            "3": 3028,
+            "4": 3658,
+            "5": 4288,
+            "6": 4917,
+            "7": 5547,
+            "8": 6176
+          },
+          "each_additional_person": 630,
+          "effective": "2026 figures (SR 26-03)",
+          "source_url": "https://www.dhhs.nh.gov/sr_htm/html/sr_26-03_dated_03_26.htm",
+          "as_of": "2026-03-01",
+          "verified_on": "2026-09-26"
+        },
+        "five_pct_disregard": {
+          "unit": "USD_per_month",
+          "by_household_size": {
+            "1": 67,
+            "2": 91,
+            "3": 114,
+            "4": 138,
+            "5": 162,
+            "6": 185,
+            "7": 209,
+            "8": 233,
+            "9": 256,
+            "10": 280
+          },
+          "formula_beyond_10": "round(FPL_annual(n) * 0.05 / 12)",
+          "source_url": "https://www.dhhs.nh.gov/sr_htm/html/sr_26-03_dated_03_26.htm",
+          "as_of": "2026-03-01",
+          "verified_on": "2026-09-26",
+          "note": "5% MAGI deduction applied when someone otherwise fails the income test (effective limit ~138% FPL)."
+        },
+        "children_pregnant_196": {
+          "unit": "USD_per_month",
+          "basis": "<196% FPG (Children's Medicaid, Pregnant Women, FPMA)",
+          "by_household_size": {
+            "1": 2607,
+            "2": 3535,
+            "3": 4463,
+            "4": 5390,
+            "5": 6318,
+            "6": 7246,
+            "7": 8174,
+            "8": 9101
+          },
+          "each_additional_person": 928,
+          "effective": "SR 26-16 dated 07/26",
+          "source_url": "https://www.dhhs.nh.gov/mam_htm/html/601_table_g_pil_granite_advantage_ema_cm_csd_pregnant_women_ma_fpec_ma_and_expanded_cm_mam.htm",
+          "as_of": "2026-07-01",
+          "verified_on": "2026-09-26"
+        },
+        "expanded_cm_318": {
+          "unit": "USD_per_month",
+          "basis": "Upper limit <318% FPG (Expanded Children's Medicaid)",
+          "by_household_size": {
+            "1": 4230,
+            "2": 5735,
+            "3": 7240,
+            "4": 8745,
+            "5": 10251,
+            "6": 11756,
+            "7": 13261,
+            "8": 14766
+          },
+          "each_additional_person": 1506,
+          "effective": "SR 26-16 dated 07/26",
+          "source_url": "https://www.dhhs.nh.gov/mam_htm/html/601_table_g_pil_granite_advantage_ema_cm_csd_pregnant_women_ma_fpec_ma_and_expanded_cm_mam.htm",
+          "as_of": "2026-07-01",
+          "verified_on": "2026-09-26"
+        },
+        "granite_advantage_conditions": [
+          "Age 19–64",
+          "Not pregnant at application",
+          "Not entitled to/enrolled in Medicare Part A or B",
+          "Not eligible for mandatory Medicaid (e.g., APTD/ANB)"
+        ],
+        "conditions_source": "https://www.dhhs.nh.gov/programs-services/medicaid/nh-medicaid-medical-assistance-eligibility/nh-medicaid-medical-0",
+        "work_requirement_note": "Federal Medicaid work/community-engagement requirements for expansion adults (2025 law) are scheduled to begin later; NH rules may change. Do not screen on work status.",
+        "fy2027_update": {
+          "note": "NH updates Medicaid limits with new FPG (next ~March 2027). No October change.",
+          "source_url": "https://www.dhhs.nh.gov/sr_htm/html/sr_26-03_dated_03_26.htm"
+        }
+      },
+      "result_wording": {
+        "may_qualify": "You may qualify. This is not a decision — only the program can decide. We recommend applying.",
+        "might_not_qualify_income": "You might not qualify based on income, but you can still apply. Some income is not counted, and special rules may apply to your situation.",
+        "check_with_program": "We can't estimate this one from your answers. Rules depend on details (like your town or situation) — please contact the program; it's free to ask.",
+        "not_applicable": null
+      },
+      "next_steps": {
+        "apply_online": "https://nheasy.nh.gov",
+        "apply_phone": "1-844-275-3447",
+        "local_office": {
+          "nashua": {
+            "name": "NH DHHS Southern District Office (Nashua)",
+            "address": "26 Whipple Street, Nashua, NH 03060",
+            "phone": "603-883-7726",
+            "source_url": "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit",
+            "hours": "Call to confirm"
+          }
+        },
+        "documents": [
+          "Photo ID",
+          "Proof of income",
+          "Social Security numbers",
+          "Immigration documents (if applicable)"
+        ]
+      },
+      "sources": [
+        "https://www.dhhs.nh.gov/sr_htm/html/sr_26-03_dated_03_26.htm",
+        "https://www.dhhs.nh.gov/mam_htm/html/601_table_g_pil_granite_advantage_ema_cm_csd_pregnant_women_ma_fpec_ma_and_expanded_cm_mam.htm",
+        "https://www.dhhs.nh.gov/programs-services/medicaid/nh-medicaid-medical-assistance-eligibility/nh-medicaid-medical-0",
+        "https://www.dhhs.nh.gov/apply-assistance"
+      ]
+    },
+    {
+      "id": "lifeline",
+      "name": "Lifeline (discount phone or internet service, FCC/USAC)",
+      "category": "phone",
+      "states": [
+        "MA",
+        "NH"
+      ],
+      "screening_questions": [
+        "state",
+        "household_size",
+        "monthly_gross_income",
+        "receives"
+      ],
+      "rules": {
+        "logic": "If anyone in household receives SNAP, Medicaid (MassHealth/NH Medicaid), SSI, FPHA (public housing/Section 8), or Veterans/Survivors Pension -> may_qualify. Else if annual income (monthly*12) <= income_135 -> may_qualify. Else might_not_qualify_income.",
+        "categorical_shortcuts": [
+          {
+            "if_receives_any": [
+              "SNAP",
+              "Medicaid",
+              "SSI",
+              "FPHA",
+              "VA_PENSION"
+            ],
+            "result": "may_qualify",
+            "source_url": "https://www.lifelinesupport.org/do-i-qualify/",
+            "as_of": "2026-09-26"
+          }
+        ],
+        "income_135": {
+          "unit": "USD_per_year",
+          "basis": "135% of 2026 Federal Poverty Guidelines",
+          "by_household_size": {
+            "1": 21546,
+            "2": 29214,
+            "3": 36882,
+            "4": 44550,
+            "5": 52218,
+            "6": 59886,
+            "7": 67554,
+            "8": 75222
+          },
+          "each_additional_person": 7668,
+          "effective": "2026 guidelines (also on mass.gov Lifeline page)",
+          "source_url": "https://www.lifelinesupport.org/do-i-qualify/",
+          "as_of": "2026",
+          "verified_on": "2026-09-26"
+        },
+        "benefit": {
+          "monthly_discount_usd": 9.25,
+          "tribal_lands_monthly_discount_usd": 34.25,
+          "one_per_household": true,
+          "source_url": "https://www.lifelinesupport.org/about-lifeline/",
+          "as_of": "2026-09-26"
+        },
+        "survivor_benefit": "Survivors of domestic violence/trafficking with financial hardship may qualify (up to 200% FPG or WIC/school meals/Pell) for up to 6 months of emergency support.",
+        "state_specifics": {
+          "MA": {
+            "state_added_benefit": null,
+            "note": "No separate MA-funded discount found; MA uses the federal National Verifier. MA Dept. of Telecommunications & Cable consumer hotline 800-392-6066.",
+            "source_url": "https://www.mass.gov/info-details/check-your-eligibility-for-the-lifeline-program"
+          },
+          "NH": {
+            "state_added_benefit": null,
+            "note": "Federally funded; NH Dept. of Energy lists participating wireline companies (Consolidated, TDS, etc.). Apply via USAC.",
+            "source_url": "https://www.energy.nh.gov/consumers/help-energy-and-utility-bills/lifeline-telephone-assistance-program"
+          }
+        }
+      },
+      "result_wording": {
+        "may_qualify": "You may qualify. This is not a decision — only the program can decide. We recommend applying.",
+        "might_not_qualify_income": "You might not qualify based on income, but you can still apply. Some income is not counted, and special rules may apply to your situation.",
+        "check_with_program": "We can't estimate this one from your answers. Rules depend on details (like your town or situation) — please contact the program; it's free to ask.",
+        "not_applicable": null
+      },
+      "next_steps": {
+        "apply_online": "https://www.lifelinesupport.org",
+        "apply_phone": "(800) 234-9473 (Lifeline Support Center)",
+        "phone_source": "https://www.lifelinesupport.org/get-help/",
+        "documents": [
+          "Proof of program participation (SNAP/Medicaid/SSI benefit letter) OR proof of income (tax return or 3 consecutive months of pay stubs)",
+          "Photo ID",
+          "Proof of address"
+        ],
+        "tip": "After approval through the National Verifier, sign up with a participating phone/internet company."
+      },
+      "sources": [
+        "https://www.lifelinesupport.org/do-i-qualify/",
+        "https://www.lifelinesupport.org/about-lifeline/",
+        "https://www.mass.gov/info-details/check-your-eligibility-for-the-lifeline-program",
+        "https://www.energy.nh.gov/consumers/help-energy-and-utility-bills/lifeline-telephone-assistance-program"
+      ]
+    },
+    {
+      "id": "liheap_ma",
+      "name": "Home Energy Assistance Program (HEAP / fuel assistance) — Massachusetts",
+      "category": "fuel_assistance",
+      "states": [
+        "MA"
+      ],
+      "screening_questions": [
+        "state",
+        "household_size",
+        "monthly_gross_income",
+        "pays_for_heat"
+      ],
+      "rules": {
+        "logic": "Annual gross income (monthly*12) <= smi_60_fy2027 -> may_qualify; else might_not_qualify_income. Heating season Nov 1–Apr 30; applications open Oct 1.",
+        "smi_60_fy2027": {
+          "unit": "USD_per_year",
+          "basis": "60% of estimated MA State Median Income (FY2027 = 2026–2027 heating season)",
+          "by_household_size": {
+            "1": 53585,
+            "2": 70073,
+            "3": 86561,
+            "4": 103049,
+            "5": 119536,
+            "6": 136024,
+            "7": 139116,
+            "8": 142207,
+            "9": 145299,
+            "10": 148390,
+            "11": 151482,
+            "12": 154573,
+            "13": 157665,
+            "14": 160756,
+            "15": 163848,
+            "16": 166939,
+            "17": 170031
+          },
+          "each_additional_person": null,
+          "effective": "FY2027 HEAP (season Nov 1 2026 – Apr 30 2027)",
+          "source_url": "https://www.mass.gov/info-details/learn-about-home-energy-assistance-heap",
+          "as_of": "2026-06-22",
+          "verified_on": "2026-09-26",
+          "note": "Sizes 11–17 from MASSCAP FY2027 chart; households 18+ contact EOHLC/local agency."
+        },
+        "smi_60_fy2026": null,
+        "smi_60_fy2026_note": "FY2026 (2025–26 season) limits were superseded on mass.gov by FY2027; not re-verified. Season is over, so FY2027 figures are the ones to use from Oct 1 2026.",
+        "benefit_levels_fy2027_source": "https://www.masscap.org/wp-content/uploads/2026/07/FY2027-LIHEAP-Income-Eligibility-and-Benefit-Chart_June-2026.pdf",
+        "local_administrator": {
+          "cape_cod": "South Shore Community Action Council (SSCAC) is the HEAP administering agency for Cape Cod & the Islands — NOT Housing Assistance Corporation (HAC runs energy-efficiency/heating system programs).",
+          "source_url": "https://www.sscac.org/fuel-assistance"
+        }
+      },
+      "result_wording": {
+        "may_qualify": "You may qualify. This is not a decision — only the program can decide. We recommend applying.",
+        "might_not_qualify_income": "You might not qualify based on income, but you can still apply. Some income is not counted, and special rules may apply to your situation.",
+        "check_with_program": "We can't estimate this one from your answers. Rules depend on details (like your town or situation) — please contact the program; it's free to ask.",
+        "not_applicable": null
+      },
+      "next_steps": {
+        "apply_online": "https://www.sscac.org/fuel-assistance (SSCAC client portal pre-application)",
+        "apply_phone": "877-383-5243 (877-FUELAID) or 508-746-6707",
+        "statewide_help": "Cold Relief Heatline (800) 632-8175; Mass 211",
+        "local_intake": {
+          "cape_cod": [
+            {
+              "name": "Falmouth Service Center (in-person application help)",
+              "address": "611 Gifford Street, Falmouth, MA 02540",
+              "phone": "508-548-2794",
+              "source_url": "https://www.falmouthservicecenter.org/fuel-assistance"
+            },
+            {
+              "name": "SSCAC Mashpee outreach site",
+              "address": "133 Falmouth Road (Shellback Place) Bldg 1, Suite E, Mashpee, MA 02649",
+              "phone": "508-746-6707",
+              "hours": "Mon/Wed/Fri 9am–3:30pm (2025–26 season; call to confirm for 2026–27)",
+              "source_url": "https://www.mashpeema.gov/1289/Fuel-Assistance-2025-2026"
+            },
+            {
+              "name": "Mashpee Human Services (under 60, by appointment)",
+              "phone": "508-539-1411",
+              "source_url": "https://www.mashpeema.gov/1289/Fuel-Assistance-2025-2026"
+            },
+            {
+              "name": "Mashpee Senior Center (60+)",
+              "phone": "508-539-1440",
+              "source_url": "https://www.mashpeema.gov/1289/Fuel-Assistance-2025-2026"
+            }
+          ]
+        },
+        "documents": [
+          "Last 4 weeks gross income for everyone 18+",
+          "Photo ID for head of household",
+          "Birth dates for all members; proof of citizenship/qualified alien status",
+          "Complete electric bill and heating bill",
+          "Mortgage/homeowner's insurance/real estate tax bill or lease",
+          "Water/sewer bill",
+          "Self-employed: last year's full federal tax return"
+        ],
+        "emergency_note": "Emergencies (shutoff notice, 1/8 tank or less, <20% propane, no heat) handled from Nov 1."
+      },
+      "sources": [
+        "https://www.mass.gov/info-details/learn-about-home-energy-assistance-heap",
+        "https://www.masscap.org/wp-content/uploads/2026/07/FY2027-LIHEAP-Income-Eligibility-and-Benefit-Chart_June-2026.pdf",
+        "https://www.sscac.org/fuel-assistance",
+        "https://www.falmouthservicecenter.org/fuel-assistance",
+        "https://www.mashpeema.gov/1289/Fuel-Assistance-2025-2026"
+      ]
+    },
+    {
+      "id": "liheap_nh",
+      "name": "Fuel Assistance Program (FAP / LIHEAP) — New Hampshire",
+      "category": "fuel_assistance",
+      "states": [
+        "NH"
+      ],
+      "screening_questions": [
+        "state",
+        "household_size",
+        "monthly_gross_income",
+        "pays_for_heat"
+      ],
+      "rules": {
+        "logic": "Annual gross income <= smi_60 -> may_qualify; else might_not_qualify_income (CAPHR says apply if close — income averaging and other funds may apply). If heat is included in SUBSIDIZED rent -> check_with_program (not eligible for FAP but may qualify for Electric Assistance).",
+        "smi_60": {
+          "unit": "USD_per_year",
+          "basis": "60% of NH State Median Income",
+          "by_household_size": {
+            "1": 48713,
+            "2": 63702,
+            "3": 78691,
+            "4": 93680,
+            "5": 108668,
+            "6": 123657,
+            "7": 126468,
+            "8": 129278,
+            "9": 132088,
+            "10": 134899
+          },
+          "each_additional_person": null,
+          "effective": "Guidelines updated 2026-05-28 (2026–2027 program year)",
+          "source_url": "https://www.energy.nh.gov/consumers/help-energy-and-utility-bills/assistance-programs-eligibility",
+          "as_of": "2026-05-28",
+          "verified_on": "2026-09-26",
+          "note": "CAPHR shows identical numbers but a footnote labels them 'start of the 2025-2026 program year' — likely a stale label; NH DOE is authoritative. Households >10: contact CAA."
+        },
+        "benefit_range_usd": {
+          "min": 188,
+          "max": 2500,
+          "source_url": "https://www.caphr.org/services/fuel-assistance",
+          "as_of": "2026-09-26"
+        },
+        "application_deadline": {
+          "value": "2027-04-30",
+          "source_url": "https://www.caphr.org/services/fuel-assistance"
+        },
+        "local_administrator": {
+          "nashua": "Community Action Partnership of Hillsborough & Rockingham Counties (CAPHR; legal name Southern New Hampshire Services, Inc.)",
+          "source_url": "https://www.caphr.org/services/fuel-assistance"
+        }
+      },
+      "result_wording": {
+        "may_qualify": "You may qualify. This is not a decision — only the program can decide. We recommend applying.",
+        "might_not_qualify_income": "You might not qualify based on income, but you can still apply. Some income is not counted, and special rules may apply to your situation.",
+        "check_with_program": "We can't estimate this one from your answers. Rules depend on details (like your town or situation) — please contact the program; it's free to ask.",
+        "not_applicable": null
+      },
+      "next_steps": {
+        "apply_online": "https://www.caphr.org/services/fuel-assistance",
+        "apply_phone": "603-889-3440 (Nashua) / 877-211-0723",
+        "local_office": {
+          "nashua": {
+            "name": "CAPHR Nashua Area Office",
+            "address": "134 Allds Street, Nashua, NH 03060",
+            "phone": "603-889-3440",
+            "hours": "Mon–Fri 8:30am–4:30pm (Fuel Assistance offices open year-round)",
+            "source_url": "https://www.caphr.org/services/fuel-assistance"
+          }
+        },
+        "documents": [
+          "Name, DOB and SSN for each household member",
+          "Income for all earners for 30 days before appointment (self-employed: full year + tax return)",
+          "Social Security/SSI/pension/unemployment/child support letters",
+          "Most recent electric and fuel bills",
+          "Mortgage statement (owners) or Landlord Verification Form (heat included in rent)"
+        ]
+      },
+      "sources": [
+        "https://www.energy.nh.gov/consumers/help-energy-and-utility-bills/assistance-programs-eligibility",
+        "https://www.caphr.org/services/fuel-assistance"
+      ]
+    },
+    {
+      "id": "wic",
+      "name": "WIC (Women, Infants & Children nutrition program)",
+      "category": "food",
+      "states": [
+        "MA",
+        "NH"
+      ],
+      "screening_questions": [
+        "state",
+        "household_size",
+        "monthly_gross_income",
+        "is_pregnant",
+        "expected_babies",
+        "is_postpartum_or_breastfeeding",
+        "has_child_under_5",
+        "receives"
+      ],
+      "rules": {
+        "logic": "Must be pregnant, postpartum/breastfeeding, or have a child under 5 (else not_applicable). If receives SNAP, Medicaid or TANF -> may_qualify (adjunctive income eligibility). Else household size (+ expected babies if pregnant) and monthly income <= income_185 -> may_qualify; else might_not_qualify_income.",
+        "categorical_shortcuts": [
+          {
+            "if_receives_any": [
+              "SNAP",
+              "Medicaid",
+              "TANF",
+              "WIC"
+            ],
+            "result": "may_qualify",
+            "source_url": "https://www.fns.usda.gov/wic/wic-eligibility-requirements",
+            "as_of": "2026-09-26"
+          }
+        ],
+        "income_185": {
+          "unit": "USD_per_month",
+          "basis": "185% FPL (WIC income eligibility guidelines)",
+          "by_household_size": {
+            "1": 2461,
+            "2": 3337,
+            "3": 4212,
+            "4": 5088,
+            "5": 5964,
+            "6": 6839,
+            "7": 7715,
+            "8": 8591
+          },
+          "each_additional_person": 876,
+          "effective": "2026-07-01 to 2027-06-30",
+          "source_url": "https://www.federalregister.gov/documents/2026/04/29/2026-08323/special-supplemental-nutrition-program-for-women-infants-and-children-wic-20262027-income",
+          "as_of": "2026-04-29",
+          "verified_on": "2026-09-26"
+        },
+        "pregnancy_household_rule": {
+          "note": "If pregnant, add one person (per expected baby) to household size.",
+          "source_url": "https://www.caphr.org/services/women-infants-children-wic"
+        }
+      },
+      "result_wording": {
+        "may_qualify": "You may qualify. This is not a decision — only the program can decide. We recommend applying.",
+        "might_not_qualify_income": "You might not qualify based on income, but you can still apply. Some income is not counted, and special rules may apply to your situation.",
+        "check_with_program": "We can't estimate this one from your answers. Rules depend on details (like your town or situation) — please contact the program; it's free to ask.",
+        "not_applicable": null
+      },
+      "next_steps": {
+        "MA": {
+          "apply_phone": "1-800-942-1007 (MA WIC, Mon–Fri 9–5)",
+          "apply_online": "https://www.mass.gov/wic-information-for-participants",
+          "local_office": {
+            "cape_cod": [
+              {
+                "name": "Cape Cod WIC (Health Imperatives) – Hyannis",
+                "address": "700 Attucks Lane, Suite 1A, Hyannis, MA 02601",
+                "phone": "508-771-7896",
+                "source_url": "https://healthimperatives.org/cape-cod"
+              },
+              {
+                "name": "Cape Cod WIC (Health Imperatives) – Mashpee (Deer Crossing)",
+                "address": "681 Falmouth Road, Building B21 (upper level), Mashpee, MA 02649",
+                "phone": "508-540-9742",
+                "hours": "Tue 11am–7pm, Wed 8:30am–4:30pm",
+                "source_url": "https://healthimperatives.org/cape-cod"
+              }
+            ]
+          }
+        },
+        "NH": {
+          "apply_phone": "1-800-942-4321 (NH State WIC Agency)",
+          "apply_online": "https://www.caphr.org/services/women-infants-children-wic",
+          "local_office": {
+            "nashua": {
+              "name": "CAPHR WIC – Nashua",
+              "address": "134 Allds Street, Nashua, NH 03060",
+              "phone": "603-889-3440",
+              "source_url": "https://www.caphr.org/services/women-infants-children-wic"
+            }
+          }
+        },
+        "documents": [
+          "Photo ID",
+          "Proof of address",
+          "Proof of income OR SNAP/Medicaid/TANF card or letter",
+          "Child's immunization record (if available)"
+        ]
+      },
+      "sources": [
+        "https://www.federalregister.gov/documents/2026/04/29/2026-08323/special-supplemental-nutrition-program-for-women-infants-and-children-wic-20262027-income",
+        "https://www.fns.usda.gov/wic/wic-eligibility-requirements",
+        "https://www.caphr.org/services/women-infants-children-wic",
+        "https://healthimperatives.org/cape-cod"
+      ]
+    },
+    {
+      "id": "raft_ma",
+      "name": "RAFT – Residential Assistance for Families in Transition (MA emergency housing costs)",
+      "category": "housing",
+      "states": [
+        "MA"
+      ],
+      "screening_questions": [
+        "state",
+        "housing_crisis",
+        "household_size",
+        "monthly_gross_income"
+      ],
+      "rules": {
+        "logic": "If housing_crisis (eviction notice, Notice to Quit, behind on mortgage, utility shutoff notice, unsafe home) -> check_with_program (income must be under 50% of the town's Area Median Income, or 60% AMI if at risk of domestic violence; AMI varies by town so the screener cannot compute it). If no housing crisis -> not_applicable.",
+        "income_limit": null,
+        "income_limit_note": "50% AMI (60% AMI with DV risk); AMI varies by city/town (Barnstable County vs. other areas). Use the state's AMI lookup / eligibility checker linked on the RAFT page — not stored here to avoid stale numbers.",
+        "max_benefit": {
+          "value": 7000,
+          "unit": "USD_per_12_months",
+          "source_url": "https://www.mass.gov/info-details/residential-assistance-for-families-in-transition-raft-program",
+          "as_of": "2026-09-26"
+        }
+      },
+      "result_wording": {
+        "may_qualify": "You may qualify. This is not a decision — only the program can decide. We recommend applying.",
+        "might_not_qualify_income": "You might not qualify based on income, but you can still apply. Some income is not counted, and special rules may apply to your situation.",
+        "check_with_program": "We can't estimate this one from your answers. Rules depend on details (like your town or situation) — please contact the program; it's free to ask.",
+        "not_applicable": null
+      },
+      "next_steps": {
+        "apply_online": "https://www.mass.gov/info-details/residential-assistance-for-families-in-transition-raft-program (Housing Help Hub)",
+        "apply_phone": "211 or 877-211-6277 (Mass 211, 24/7); TTY 508-370-4890",
+        "documents": [
+          "ID for head of household",
+          "Lease or tenancy agreement",
+          "Proof of housing crisis (Notice to Quit, eviction notice, shutoff notice, mortgage delinquency)",
+          "Income verification (may be automatic)",
+          "Landlord must submit their part within 21 days"
+        ],
+        "local_help": {
+          "cape_cod": [
+            {
+              "name": "Housing Assistance Corporation (housing counseling)",
+              "phone": "508-771-5400",
+              "source_url": "https://www.haconcapecod.org/"
+            }
+          ]
+        }
+      },
+      "sources": [
+        "https://www.mass.gov/info-details/residential-assistance-for-families-in-transition-raft-program"
+      ]
+    },
+    {
+      "id": "nh_housing_help",
+      "name": "Housing & rental help — New Hampshire (211 NH, local welfare, Greater Nashua Coordinated Entry)",
+      "category": "housing",
+      "states": [
+        "NH"
+      ],
+      "screening_questions": [
+        "state",
+        "housing_crisis",
+        "experiencing_homelessness"
+      ],
+      "rules": {
+        "logic": "If housing_crisis or experiencing_homelessness -> check_with_program with referral list. NH municipal welfare (General Assistance) is available in every town; eligibility set locally.",
+        "income_limit": null,
+        "income_limit_note": "No statewide emergency rental assistance program with a published income table was found open on 2026-09-26 (the pandemic-era NH ERAP is closed). Local programs set their own criteria."
+      },
+      "result_wording": {
+        "may_qualify": "You may qualify. This is not a decision — only the program can decide. We recommend applying.",
+        "might_not_qualify_income": "You might not qualify based on income, but you can still apply. Some income is not counted, and special rules may apply to your situation.",
+        "check_with_program": "We can't estimate this one from your answers. Rules depend on details (like your town or situation) — please contact the program; it's free to ask.",
+        "not_applicable": null
+      },
+      "next_steps": {
+        "referrals": {
+          "nashua": [
+            {
+              "name": "Greater Nashua Coordinated Entry (homeless intake, assessment & referral)",
+              "phone": "1-844-800-9911",
+              "source_url": "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+            },
+            {
+              "name": "NH 211 (statewide, after hours)",
+              "phone": "211 or 1-866-444-4211",
+              "source_url": "https://www.211nh.org"
+            },
+            {
+              "name": "City of Nashua Welfare Department (General Assistance: rent, food, utilities, medications)",
+              "address": "18 Mulberry St, Nashua, NH 03060",
+              "phone": "603-589-4555",
+              "source_url": "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit",
+              "documents": [
+                "Apply in person with photo ID and Social Security card"
+              ]
+            },
+            {
+              "name": "Front Door Agency (back rent, utility arrears, security deposits)",
+              "phone": "603-886-2866",
+              "source_url": "https://www.frontdooragency.org/"
+            },
+            {
+              "name": "Family Promise of Southern NH (eviction prevention, family shelter)",
+              "phone": "603-883-7338",
+              "source_url": "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+            },
+            {
+              "name": "Salvation Army Nashua (back rent & utilities, by appointment)",
+              "phone": "603-889-5151",
+              "source_url": "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+            }
+          ]
+        }
+      },
+      "sources": [
+        "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit",
+        "https://www.211nh.org"
+      ]
+    },
+    {
+      "id": "emergency_shelter",
+      "name": "Emergency shelter",
+      "category": "shelter",
+      "states": [
+        "MA",
+        "NH"
+      ],
+      "screening_questions": [
+        "state",
+        "experiencing_homelessness",
+        "has_child_under_19",
+        "is_pregnant"
+      ],
+      "rules": {
+        "logic": "If experiencing_homelessness -> check_with_program with state-specific path. MA families with children or pregnant: state Emergency Assistance (EA) family shelter via EOHLC (income and other rules apply; figures not stored). MA individuals: call 211 / St. Joseph's House (Hyannis). NH: Greater Nashua Coordinated Entry 1-844-800-9911 or 211.",
+        "income_limit": null,
+        "income_limit_note": "MA EA family shelter has an income limit but it was not verified on an official page during this build; do not display a number."
+      },
+      "result_wording": {
+        "may_qualify": "You may qualify. This is not a decision — only the program can decide. We recommend applying.",
+        "might_not_qualify_income": "You might not qualify based on income, but you can still apply. Some income is not counted, and special rules may apply to your situation.",
+        "check_with_program": "We can't estimate this one from your answers. Rules depend on details (like your town or situation) — please contact the program; it's free to ask.",
+        "not_applicable": null
+      },
+      "next_steps": {
+        "MA": {
+          "families": {
+            "apply_online": "https://applyhousinghelp.mass.gov/",
+            "phone": "866-584-0653 (EOHLC Remote Assistance)",
+            "in_person": "EOHLC at DTA Hyannis office, Tuesdays 9am–3pm (HAC lists '181 North Street' — mass.gov lists DTA Hyannis at 500 Main Street; call to confirm)",
+            "source_url": "https://haconcapecod.org/program-services/shelters-and-homeless-services/shelters/"
+          },
+          "individuals": {
+            "phone": "211 (Mass 211, 24/7)",
+            "note": "St. Joseph's House (77 Winter St, Hyannis; operated by Catholic Charities) is the only overnight shelter for individuals on Cape Cod; intake/bed availability by phone — call 211 for current contact.",
+            "source_url": "https://haconcapecod.org/st-josephs-house-shelter/"
+          }
+        },
+        "NH": {
+          "phone": "1-844-800-9911 (Greater Nashua Coordinated Entry) or 211",
+          "shelters": [
+            "Nashua Soup Kitchen & Shelter 603-889-7770",
+            "Southern NH Rescue Mission (men: Mercy House 603-889-3421; women: Hope Center 603-521-7127)"
+          ],
+          "source_url": "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+        },
+        "dv_note": "If you are fleeing domestic violence: in MA call 211 or 988 for a confidential referral; in Nashua, Bridges 24-hour support line 603-883-3044."
+      },
+      "sources": [
+        "https://haconcapecod.org/program-services/shelters-and-homeless-services/shelters/",
+        "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+      ]
+    },
+    {
+      "id": "food_pantries_meals",
+      "name": "Food pantries & free community meals",
+      "category": "food",
+      "states": [
+        "MA",
+        "NH"
+      ],
+      "screening_questions": [
+        "state"
+      ],
+      "rules": {
+        "logic": "Always may_qualify — most pantries and meal programs have no income test (some limit visits or serve specific towns). Show resource finder results for category 'food'.",
+        "income_limit": null
+      },
+      "result_wording": {
+        "may_qualify": "You may qualify. This is not a decision — only the program can decide. We recommend applying.",
+        "might_not_qualify_income": "You might not qualify based on income, but you can still apply. Some income is not counted, and special rules may apply to your situation.",
+        "check_with_program": "We can't estimate this one from your answers. Rules depend on details (like your town or situation) — please contact the program; it's free to ask.",
+        "not_applicable": null
+      },
+      "next_steps": {
+        "cape_cod_directory": "https://www.capecod.gov/departments/cooperative-extension/programs/nutrition-education-food-safety/food-access-resources/food-access-directory/",
+        "nashua_directory": "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit",
+        "tip": "Hours change often — call before you go."
+      },
+      "sources": [
+        "https://www.capecod.gov/departments/cooperative-extension/programs/nutrition-education-food-safety/food-access-resources/food-access-directory/",
+        "https://www.hudsonnh.gov/DocumentCenter/View/10487/2025-Greater-Nashua-Continuum-of-Care-Resource-Toolkit"
+      ]
+    }
+  ],
+  "unverified_or_null_figures": [
+    {
+      "program": "snap_nh",
+      "field": "fy2027_update.nh_gross_limit_200",
+      "reason": "NH Oct-2026 SNAP mass change not yet posted."
+    },
+    {
+      "program": "snap_ma",
+      "field": "fy2027_update.max_benefit_other_sizes",
+      "reason": "USDA FY2027 COLA memo PDF blocked; only 1-person max ($306) verified via FNS FDPIR page."
+    },
+    {
+      "program": "liheap_ma",
+      "field": "smi_60_fy2026",
+      "reason": "Superseded by FY2027 on mass.gov; not re-verified."
+    },
+    {
+      "program": "raft_ma",
+      "field": "income_limit",
+      "reason": "Depends on town AMI; use official lookup."
+    },
+    {
+      "program": "nh_housing_help",
+      "field": "income_limit",
+      "reason": "No statewide program with published table."
+    },
+    {
+      "program": "emergency_shelter",
+      "field": "income_limit",
+      "reason": "MA EA family shelter limit not verified this cycle."
+    },
+    {
+      "program": "masshealth",
+      "field": "msp_qi_225_plus20 sizes 3+",
+      "reason": "Only 1–2 person values published."
+    }
+  ]
+}

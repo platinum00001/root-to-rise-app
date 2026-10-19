@@ -1,0 +1,18 @@
+{
+  "version": "v1",
+  "offers": [
+    {
+      "id": "sample-lifeline-free-phone",
+      "sample": true,
+      "title": "Free phone and monthly service through Lifeline (SAMPLE OFFER)",
+      "partner": "Lifeline program (federal) — sample listing",
+      "summary": "If you qualify for Lifeline, many participating providers offer a free smartphone with free monthly talk, text, and data. A phone makes it easier to stay connected to your recovery supports, appointments, and job searches.",
+      "who_qualifies": "Household income at or below 135% of the federal poverty guideline, or you get SNAP, Medicaid/MassHealth, SSI, Federal Public Housing Assistance, or the Veterans Pension.",
+      "program_ids": ["lifeline"],
+      "states": ["MA", "NH"],
+      "link": "https://www.lifelinesupport.org/",
+      "link_label": "Learn more and apply at Lifeline Support",
+      "expires": ""
+    }
+  ]
+}

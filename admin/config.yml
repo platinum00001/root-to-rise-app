@@ -1,0 +1,212 @@
+# Sveltia CMS configuration for Root to Rise
+# Editors sign in with GitHub. See docs/DEPLOY-GUIDE.md ("Sveltia CMS editors") to
+# set up the free GitHub OAuth helper (sveltia-cms-auth) and then set base_url below.
+backend:
+  name: github
+  repo: platinum00001/root-to-rise
+  branch: main
+  # base_url: https://sveltia-cms-auth.YOUR-SUBDOMAIN.workers.dev   # <- uncomment after OAuth setup
+  commit_messages:
+    update: "Content: update {{collection}} “{{slug}}” via /admin"
+
+media_folder: images/uploads
+public_folder: /images/uploads
+site_url: https://root-to-rise.vercel.app
+
+collections:
+  # ------------------------------------------------------------------ RESOURCES
+  # ------------------------------------------------------------------ RESOURCES
+  - name: resources
+    label: Resources
+    description: >-
+      Services shown in the resource finder. Most entries come from the Root to Rise Resource
+      Navigator dataset (see docs/DATA-FORMAT.md). Only add details you have verified, and update
+      "Last verified" when you re-check an entry.
+    files:
+      - name: resources
+        label: Resource list
+        file: data/resources.json
+        format: json
+        fields:
+          - { name: version, label: Version, widget: string }
+          - { name: last_updated, label: Last updated, widget: string, hint: "YYYY-MM-DD" }
+          - { name: note, label: Note shown on the finder page, widget: text, required: false }
+          - name: regions
+            label: Regions (zip prefixes decide which region a zip belongs to)
+            widget: list
+            fields:
+              - { name: id, label: ID, widget: string }
+              - { name: label, label: Label, widget: string }
+              - { name: zip_prefixes, label: Zip prefixes, widget: list, field: { name: p, label: Prefix, widget: string } }
+          - name: categories
+            label: Categories
+            widget: list
+            fields:
+              - { name: id, label: ID (no spaces), widget: string }
+              - { name: label, label: Label, widget: string }
+          - name: towns
+            label: Towns (for the town filter)
+            widget: list
+            fields:
+              - { name: name, label: Town, widget: string }
+              - { name: state, label: State, widget: select, options: [MA, NH] }
+              - { name: region, label: Region, widget: select, options: [cape_cod, nashua] }
+              - { name: zips, label: Zip codes, widget: list, field: { name: zip, label: Zip, widget: string } }
+          - name: resources
+            label: Resources
+            widget: list
+            summary: "{{fields.name}} — {{fields.town}}"
+            fields:
+              - { name: id, label: "ID (unique, no spaces)", widget: string }
+              - { name: name, label: Organization name, widget: string }
+              - { name: service, label: Service / program name (if different), widget: string, required: false }
+              - name: categories
+                label: Categories
+                widget: select
+                multiple: true
+                options: [crisis, treatment, peer-support, harm-reduction, mental-health, housing, food, benefits, fuel, health, transportation, jobs, legal, info]
+              - { name: description, label: Description, widget: text }
+              - { name: region, label: "Home region (cape_cod, nashua, statewide_ma, statewide_nh, national)", widget: string, required: false }
+              - { name: regions, label: Show in regions, widget: select, multiple: true, options: [cape_cod, nashua] }
+              - { name: states, label: States, widget: select, multiple: true, options: [MA, NH], required: false }
+              - { name: statewide, label: "Statewide / national service?", widget: boolean, default: false }
+              - { name: address, label: Street address, widget: string, required: false }
+              - { name: town, label: Town, widget: string, required: false }
+              - { name: state, label: State, widget: select, options: [MA, NH], required: false }
+              - { name: zip, label: Zip, widget: string, required: false }
+              - { name: other_locations, label: Other locations, widget: list, required: false, field: { name: loc, label: Location, widget: string } }
+              - { name: serves, label: Also serves towns, widget: list, required: false, field: { name: town, label: Town, widget: string } }
+              - { name: phone, label: Main phone, widget: string, required: false }
+              - name: phones
+                label: All phone numbers
+                widget: list
+                required: false
+                fields:
+                  - { name: number, label: Number, widget: string }
+                  - { name: description, label: What it's for, widget: string, required: false }
+              - { name: email, label: Email, widget: string, required: false }
+              - { name: website, label: Website, widget: string, required: false }
+              - { name: hours, label: Hours, widget: string, required: false }
+              - { name: call_to_confirm, label: "Show 'Call to confirm hours' badge", widget: boolean, default: true }
+              - { name: eligibility, label: Who can use it, widget: string, required: false }
+              - { name: fees, label: Cost, widget: string, required: false }
+              - { name: verified, label: "Verified?", widget: boolean, default: false }
+              - { name: last_verified, label: Last verified (YYYY-MM-DD), widget: string, required: false }
+              - { name: source_urls, label: Where it was verified (URLs), widget: list, required: false, field: { name: url, label: URL, widget: string } }
+              - { name: verification_method, label: Verification method, widget: string, required: false }
+              - { name: data_source, label: Data source, widget: select, options: [navigator, web-team, editor], default: editor }
+
+  # ---------------------------------------------------------------- ELIGIBILITY
+  # data/eligibility-rules.json (the income tables and program logic) is maintained by the
+  # Resource Navigator build scripts because every number must carry its official source and
+  # "as of" date. It is deliberately NOT editable here, so a CMS save can never drop a table.
+  # See docs/DATA-FORMAT.md > "Updating eligibility rules".
+  - name: eligibility
+    label: Eligibility checker
+    description: >-
+      Extra questions and "other places to check" pointers shown after the main screener results.
+      Income limits are updated through the Navigator data files — see docs/DATA-FORMAT.md.
+    files:
+      - name: extras
+        label: Eligibility extras (pointers)
+        file: data/eligibility-extras.json
+        format: json
+        fields:
+          - { name: version, label: Version, widget: string }
+          - { name: status_label, label: Heading shown above these pointers, widget: string }
+          - { name: note, label: Editor note, widget: text, required: false }
+          - name: questions
+            label: Extra questions
+            widget: list
+            fields:
+              - { name: id, label: "Answer ID (used in conditions)", widget: string }
+              - { name: text, label: Question text, widget: string }
+              - { name: type, label: Type, widget: select, options: [boolean, enum, integer] }
+              - { name: options, label: "Options (for enum)", widget: list, required: false, field: { name: o, label: Option ID, widget: string } }
+              - { name: option_labels, label: "Option labels (for enum)", widget: keyvalue, required: false }
+              - { name: sensitive, label: Sensitive, widget: boolean, default: false }
+              - { name: health_data, label: "Health data (never saved without separate consent)", widget: boolean, default: false }
+          - name: programs
+            label: Pointers
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { name: id, label: ID, widget: string }
+              - { name: name, label: Name, widget: string }
+              - { name: states, label: "Only in states (blank = both)", widget: select, multiple: true, options: [MA, NH], required: false }
+              - name: show_if
+                label: Show when ALL match
+                widget: list
+                required: false
+                fields: &cond
+                  - { name: field, label: "Answer ID (e.g. veteran, in_recovery, insurance, has_disability, age, state)", widget: string }
+                  - { name: op, label: Test, widget: select, options: [eq, in, gte, lte], default: eq }
+                  - { name: value, label: "Value (true/false, number, or comma-separated list)", widget: string }
+              - { name: show_if_any, label: Show when ANY match, widget: list, required: false, fields: *cond }
+              - { name: message, label: Message, widget: text }
+              - name: links
+                label: Links
+                widget: list
+                fields:
+                  - { name: label, label: Label, widget: string }
+                  - { name: url, label: "URL (https, tel, mailto, or a page like resources.html)", widget: string }
+
+  - name: offers
+    label: Partner offers
+    files:
+      - name: offers
+        label: Offers
+        file: data/offers.json
+        format: json
+        fields:
+          - { name: version, label: Version, widget: string }
+          - name: offers
+            label: Offers
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { name: id, label: ID, widget: string }
+              - { name: sample, label: "Sample / demo offer?", widget: boolean, default: false }
+              - { name: title, label: Title, widget: string }
+              - { name: partner, label: Partner, widget: string, required: false }
+              - { name: summary, label: Summary, widget: text }
+              - { name: who_qualifies, label: Who qualifies, widget: text, required: false }
+              - { name: program_ids, label: Related checker program IDs, widget: list, required: false, field: { name: id, label: Program ID, widget: string } }
+              - { name: states, label: States, widget: select, multiple: true, options: [MA, NH] }
+              - { name: link, label: Link, widget: string, required: false }
+              - { name: link_label, label: Link text, widget: string, required: false }
+              - { name: expires, label: Ends (YYYY-MM-DD), widget: string, required: false }
+
+  # ------------------------------------------------------------------ PAGE TEXT
+  - name: pages
+    label: Page text
+    files:
+      - name: site
+        label: Site & home page text
+        file: data/site.json
+        format: json
+        fields:
+          - name: site
+            label: Organization
+            widget: object
+            fields:
+              - { name: org_name, label: Nonprofit name, widget: string }
+          - name: home
+            label: Home page
+            widget: object
+            fields:
+              - { name: hero_title, label: Headline, widget: string }
+              - { name: hero_text, label: Intro paragraph, widget: text }
+              - { name: mission, label: Mission, widget: text }
+              - { name: ma_text, label: Massachusetts blurb, widget: text }
+              - { name: nh_text, label: New Hampshire blurb, widget: text }
+          - name: offers
+            label: Offers page
+            widget: object
+            fields:
+              - { name: consent_text, label: Opt-in consent wording, widget: text, hint: "Plain language. Must mention one-click unsubscribe and no selling/sharing of health data." }
+          - name: privacy
+            label: Privacy policy
+            widget: object
+            fields:
+              - { name: updated, label: Last updated date, widget: string }
